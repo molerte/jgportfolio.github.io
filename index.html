@@ -1,1 +1,179 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale = 1.0,maximum-scale = 1.0">
+        <title>Home | Jason's Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="icon" href="images/logo_bo.png">
+    </head>
+
+    <body>
+        <div id="mobile-nav-bar">
+            <img src="images/molerteFAVI2.png" alt="logo">
+            <button id="mobile-nav-toggle" aria-label="Open navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="#" class="home">Home</a></li>
+                    <li><a href="About/About.html">About Me</a></li>
+                    <li><a href="Projects/Projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        <main>
+
+            <section>
+                <div class="firstDiv">
+                    <div class="first reveal">
+                        <h1>Welcome to my <i>Portfolio</i></h1>
+                    </div>
+
+                    <div class="second reveal">
+                        <img src="images/profilepicNOISEDARK.jpg" alt="frame">
+                    </div>
+                </div>
+
+                <div class="secondDiv">
+                    <div class="hello">
+                        <div class="hello reveal">
+                            Hello, my name is Jason Garcia. I am a junior at the University of South Carolina Beaufort, majoring in Information Science and Technology.
+                            <br> <b>Check out my stuff</b>
+                        </div>
+                    </div>
+
+                    <div class="about reveal">
+                        <div class="row">
+                            <div class="optionColumn">
+                                <a href="About/About.html"><img src="images/Aboute.jpg" class="row-img"></a>
+                                <figcaption>About Me</figcaption>
+                            </div>
+
+                            <div class="optionColumn">
+                                <a href="Projects/Projects.html"><img src="images/Projects.jpg" class="row-img"></a>
+                                <figcaption>My Projects</figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thirdDiv">
+                    <div class="edits">
+                        <div class="edits reveal">
+                            Check these Photoshop edits that I made!
+                            <p>If you don't mind!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moving reveal">
+                    <div class="moving">
+                        <div class="moving-slide">
+                            <img src="images/topoutPORCHE911.jpg" alt="porsche">
+                            <img src="images/curtainsalbumcoverCURAINTS.jpg" alt="curtains">
+                            <img src="images/tuxGUYALBUMTONEDARKPA.jpg" alt="tux">
+                            <img src="images/porsche911drive2.jpg" alt="porsche2">
+                            <img src="images/15amOF1.jpg" alt="15am">
+                            <img src="images/15amtilt.jpg" alt="tilt">
+                            <img src="images/catsAlbum.jpg" alt="cats">
+                            <img src="images/albumcover22COVERCLOUDS.jpg" alt="clouds">
+                        </div>
+
+                        <div class="moving-slide">
+                            <img src="images/topoutPORCHE911.jpg" alt="porsche">
+                            <img src="images/curtainsalbumcoverCURAINTS.jpg" alt="curtains">
+                            <img src="images/tuxGUYALBUMTONEDARKPA.jpg" alt="tux">
+                            <img src="images/porsche911drive2.jpg" alt="porsche2">
+                            <img src="images/15amOF1.jpg" alt="15am">
+                            <img src="images/15amtilt.jpg" alt="tilt">
+                            <img src="images/catsAlbum.jpg" alt="cats">
+                            <img src="images/albumcover22COVERCLOUDS.jpg" alt="clouds">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fourthDiv">
+                    <div class="socials reveal">
+                        <h1>Contact Me</h1>
+                    </div>
+                </div>
+
+                <div class="fifthDiv">
+                    <div class="copyright">
+                        <p>&#169 2025 Jason Garcia | business inquiries: Jasoneg013@gmail.com | Phone: (843) 489-2237</p>
+                    </div>
+
+                    <div class="socials">
+                        <li><a href="https://github.com/JaGar20" class="fa fa-github"></a></li>
+                        <li><a href="https://www.linkedin.com/in/jason-garcia-arias-9b8892362" class="fa fa-linkedin"></a></li>
+                        <li><a href="https://www.youtube.com/channel/UC2F59H8PSdkOaFJs3yt7yYw" class="fa fa-youtube"></a></li>
+                    </div>
+                </div>
+            </section>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                const reveals = document.querySelectorAll('.reveal');
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                    if(entry.isIntersecting){
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                    });
+                }, { threshold: 0.15 });
+
+                reveals.forEach(reveal => {
+                    observer.observe(reveal);
+                    });
+                });
+            </script>
+
+            <script>
+                document.getElementById('mobile-nav-toggle').onclick = function() {
+                    this.classList.toggle('open');
+                    document.querySelector('#nav_menu ul').classList.toggle('open');
+                };
+            </script>
+
+            <script>
+                document.getElementById('mobile-nav-toggle').onclick = function() {
+                    this.classList.toggle('open');
+                    document.querySelector('#nav_menu ul').classList.toggle('open');
+                };
+            </script>
+
+            <script>
+                const navToggle = document.getElementById('mobile-nav-toggle');
+                const navMenu = document.querySelector('#nav_menu ul');
+                const navLinks = document.querySelectorAll('#nav_menu ul li a');
+
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('open');
+                        navToggle.classList.remove('open');
+                    });
+                });
+
+                document.addEventListener('click', function(event) {
+                    const isMenuOpen = navMenu.classList.contains('open');
+                    if (
+                        isMenuOpen && 
+                        !navMenu.contains(event.target) && 
+                        event.target !== navToggle && 
+                        !navToggle.contains(event.target)
+                    ) {
+                        navMenu.classList.remove('open');
+                        navToggle.classList.remove('open');
+                    }
+
+                });
+            </script>
+        </main>
+    </body>
+</html>
