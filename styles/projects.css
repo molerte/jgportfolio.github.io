@@ -3,16 +3,17 @@
 }
 
 html {
+    background-color: #181818;
     background-image: url("../images/homebanner.jpg");
     overflow-x: hidden;
 }
 
 @font-face {
-    font-family: 'bebas';
+    font-family: 'Bebas';
     src: url('bebas_neue.otf') format('opentype');
 }
 @font-face {
-    font-family: 'mermaid';
+    font-family: 'Mermaid';
     src: url('mermaid.ttf') format('truetype');
 }
 @font-face {
@@ -92,7 +93,7 @@ html {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.151));
     font-size: 15vw; 
     text-align: center;
-    font-family: BEBAS;
+    font-family: Bebas, Arial, Helvetica, sans-serif;
     font-weight: 600;
     word-break: break-word;
     margin: 0; 
@@ -103,7 +104,7 @@ html {
     background-image: url("../images/homebanner.jpg");
     padding: 4vw 2vw 6vw 2vw;
     min-height: 20em;
-    font-family: mermaid, Arial, sans-serif;
+    font-family: Mermaid, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
@@ -168,7 +169,7 @@ html {
     color: rgb(187, 255, 131);
     font-family: '8-bit Fortress Regular', monospace;
     font-size: 1.5em;
-    font-weight: 350;
+    font-weight: 550;
     animation: fade-up 0.7s;
     filter: drop-shadow(0 0 10px rgba(91, 255, 91, 0.603));
     text-align: left;
@@ -269,7 +270,7 @@ html {
 
 .row figcaption {
     color: rgb(226, 226, 226);
-    font-family: bebas, Arial, sans-serif;
+    font-family: Bebas, Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     text-align: center;
     max-width: 24em;      /* Set a shorter maximum width */
@@ -283,7 +284,7 @@ html {
     font-size: 7vw;
     min-font-size: 2em;
     margin-top: 0.1em;
-    font-family: DOGMA DEMO Regular, Arial, sans-serif;
+    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
     font-weight: 300;
     animation: fade-up 0.7s;
     filter: drop-shadow(0 0 8px rgba(84, 72, 252, 0.438));
@@ -341,7 +342,7 @@ html {
     background-image: url("../images/homebanner.jpg");
     padding: 4vw 2vw 5vw 2vw;
     min-height: 30em;
-    font-family: mermaid, Arial, sans-serif;
+    font-family: mermaid, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
@@ -376,7 +377,7 @@ html {
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 3px rgba(243, 58, 58, 0.623));
     font-size: 5.5vw;
-    font-family: BEBAS, Arial, sans-serif;
+    font-family: BEBAS, Arial, Helvetica, sans-serif;
     text-align: left;
     margin: 0 0 0 0.7em;
     min-width: 2em;
@@ -501,8 +502,8 @@ html {
 .fifthDiv h1 {
     color: rgb(248, 58, 58);
     padding-top: 0.2em;
-    font-family: DOGMA DEMO Regular, Arial, sans-serif;
-    font-weight: 100;
+    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
+    font-weight: 700;
     font-size: 7vw;
     text-align: center;
     filter: drop-shadow(0 0 9px rgba(255, 14, 14, 0.836));
@@ -556,7 +557,7 @@ html {
 
 .firstColumn b,
 .secondColumn b {
-    font-family: DOGMA DEMO Regular, Arial, sans-serif;
+    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
     color: rgb(243, 61, 61);
     filter: drop-shadow(0 0 5px rgba(248, 58, 58, 0.449));
     font-size: 1.4em;
@@ -569,7 +570,7 @@ html {
 
 .copyright {
     color: #fff;
-    font-family: DOGMA DEMO Regular, Arial, sans-serif;
+    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
     text-align: center;
     padding-top: 2em;
 }
@@ -641,7 +642,8 @@ html {
     text-decoration: none;
     padding: 1em 0;
     color: #fff;
-    font-family: DOGMA DEMO Regular, Arial, sans-serif;
+    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
+    font-weight: 700;
     transition: 1s;
 }
 

@@ -3,16 +3,17 @@
 } 
 
 html {
+    background-color: #181818;
     background-image: url("../images/homebanner.jpg");
     overflow-x: hidden;
 }
 
 @font-face {
-    font-family: 'bebas';
+    font-family: 'Bebas';
     src: url('bebas_neue.otf') format('opentype');
 }
 @font-face {
-    font-family: 'mermaid';
+    font-family: 'Mermaid';
     src: url('mermaid.ttf') format('truetype');
 }
 @font-face {
@@ -88,7 +89,7 @@ html {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.151));
     font-size: 15vw; 
     text-align: center;
-    font-family: BEBAS;
+    font-family: Bebas, Arial, Helvetica, sans-serif;
     font-weight: 800;
     word-break: break-word;
 }
@@ -130,7 +131,7 @@ html {
 
 .whoAmI h1 {
     color: rgb(255, 33, 33);
-    font-family: DOGMA DEMO Regular, Arial, sans-serif;
+    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 3em;
     margin-bottom: 0.5em;
@@ -170,7 +171,7 @@ html {
 
 .motive h1 {
     color: rgb(255, 33, 33);
-    font-family: DOGMA DEMO Regular, Arial, sans-serif;
+    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 3em;
     margin-bottom: 0.5em;
@@ -196,7 +197,7 @@ html {
 
 .thirdDiv h1 {
     text-align: center;
-    font-family: DOGMA DEMO Regular, Arial, sans-serif;
+    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
     font-size: 7vw; 
     color: #ffffff;
     font-weight: 100;
@@ -230,7 +231,7 @@ html {
 .row figcaption {
     margin-top: 1em;
     width: 100%;
-    font-family: BEBAS;
+    font-family: Bebas, Arial, Helvetica, sans-serif;
     font-weight: 100;
     text-align: center;
     color: #ffffff;
@@ -273,7 +274,7 @@ html {
 
 .fourthDiv h1 {
     text-align: center;
-    font-family: DOGMA DEMO Regular, Arial, sans-serif;
+    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
     font-weight: 200;
     font-size: 7vw; 
     padding-top: 0.2em;
@@ -344,7 +345,7 @@ html {
 
 .copyright p {
     color: white;
-    font-family: DOGMA DEMO Regular, Arial, sans-serif;
+    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
     text-align: center;
     padding-top: 2em;
 }
@@ -421,6 +422,7 @@ html {
     padding: 1em 0;
     color: #fff;
     font-family: DOGMA DEMO Regular, Arial, sans-serif;
+    font-weight: 700;
     transition: 1s;
 }
 
