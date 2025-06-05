@@ -8,14 +8,16 @@ html {
 }
 
 @font-face {
-    font-family: bebas;
-    src: url(bebas_neue.otf);
-
-    font-family: mermaid;
-    src: url(mermaid.ttf);
-
-    font-family: DOGMA DEMO Regular;
-    src: url(DOGMA.OTF);
+    font-family: 'bebas';
+    src: url('bebas_neue.otf') format('opentype');
+}
+@font-face {
+    font-family: 'mermaid';
+    src: url('mermaid.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'DOGMA DEMO Regular';
+    src: url('DOGMA.OTF') format('opentype');
 }
 
 @keyframes slide {
@@ -232,7 +234,8 @@ html {
 
 .moving-slide {
     display: inline-block;
-    animation: 80s slide infinite linear;
+    /*animation: 80s slide infinite linear;*/
+    will-change: transform;
     font-size: 0;
 }
 

@@ -37,7 +37,7 @@
 
                 <div class="secondDiv">
                     <div class="whoAmI reveal">
-                        <img src="../images/lfromat.jpg" alt="ThisMe">
+                        <img src="../images/AboutMeFace.jpg" alt="ThisMe">
 
                         <div class="whoAmI-content">
                             <h1>WHO AM I?</h1>
@@ -166,27 +166,27 @@
                         entry.target.classList.add('active');
                         observer.unobserve(entry.target);
                     }
-                    });
+                    })
                 }, { threshold: 0.15 });
 
                 reveals.forEach(reveal => {
                     observer.observe(reveal);
-                    });
-                });
+                    })
+                })
             </script>
 
             <script>
                 document.getElementById('mobile-nav-toggle').onclick = function() {
                     this.classList.toggle('open');
                     document.querySelector('#nav_menu ul').classList.toggle('open');
-                };
+                }
             </script>
 
             <script>
                 document.getElementById('mobile-nav-toggle').onclick = function() {
                     this.classList.toggle('open');
                     document.querySelector('#nav_menu ul').classList.toggle('open');
-                };
+                }
             </script>
 
             <script>
@@ -198,8 +198,8 @@
                     link.addEventListener('click', () => {
                         navMenu.classList.remove('open');
                         navToggle.classList.remove('open');
-                    });
-                });
+                    })
+                })
 
                 document.addEventListener('click', function(event) {
                     const isMenuOpen = navMenu.classList.contains('open');
@@ -213,7 +213,33 @@
                         navToggle.classList.remove('open');
                     }
 
-                });
+                })
+            </script>
+
+            <script>
+            window.addEventListener('DOMContentLoaded', function() {
+                const slide = document.querySelector('.moving-slide');
+                const imgs = slide.querySelectorAll('img');
+                    let loaded = 0;
+
+                function startAnimation() {
+                slide.style.animation = '40s slide infinite linear';
+                }
+
+                slide.style.animation = 'none';
+
+                imgs.forEach(img => {
+                    if (img.complete) {
+                        loaded++;
+                        if (loaded === imgs.length) startAnimation();
+                    } else {
+                        img.addEventListener('load', () => {
+                            loaded++;
+                            if (loaded === imgs.length) startAnimation();
+                        })
+                    }
+                })
+            })
             </script>
         </main>
     </body>
