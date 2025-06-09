@@ -89,8 +89,8 @@ html {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.151));
     font-size: 15vw; 
     text-align: center;
-    font-family: Bebas, Arial, Helvetica, sans-serif;
-    font-weight: 800;
+    font-family: BEBAS, Arial, Helvetica, sans-serif;
+    font-weight: 600;
     word-break: break-word;
 }
 
@@ -548,7 +548,7 @@ html {
     }
 
     .firstDiv h1 {
-        font-size: clamp(6em, 12vw, 5em);
+        font-size: clamp(5em, 10vw, 5em);
     }
 
     .secondDiv h1 {

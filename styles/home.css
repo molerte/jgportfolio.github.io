@@ -235,8 +235,8 @@ html {
 
 .moving-slide {
     display: inline-block;
-    /*animation: 80s slide infinite linear;*/
-    will-change: transform;
+    animation: 70s slide infinite linear;
+    /*will-change: transform;*/
     font-size: 0;
 }
 
@@ -266,7 +266,6 @@ html {
     margin-top: 0;
     padding: 2em 1em;
     min-height: 8em;
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
@@ -275,6 +274,7 @@ html {
     flex: 0 1 auto;
     margin: 0 auto;
     text-align: center;
+    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
     width: 100%;
     font-weight: 500;
     font-size: 5em;
@@ -581,6 +581,7 @@ html {
 
     .fourthDiv h1{
         font-size: clamp(2em, 10vw, 4em);
+        font-weight: 800;
     }
 
     .copyright p {

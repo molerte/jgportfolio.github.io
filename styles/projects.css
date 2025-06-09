@@ -93,7 +93,7 @@ html {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.151));
     font-size: 15vw; 
     text-align: center;
-    font-family: Bebas, Arial, Helvetica, sans-serif;
+    font-family: BEBAS, Arial, Helvetica, sans-serif;
     font-weight: 600;
     word-break: break-word;
     margin: 0; 
@@ -138,7 +138,7 @@ html {
     color: rgb(255, 113, 113);
     font-family: '8-bit Fortress Regular', monospace;
     font-size: 1.5em;
-    font-weight: 350;
+    font-weight: 550;
     animation: fade-up 0.7s;
     filter: drop-shadow(0 0 10px rgba(255, 68, 68, 0.603));
     text-align: left;
@@ -769,7 +769,7 @@ html {
     }
 
     .firstDiv h1{
-        font-size: clamp(6em, 12vw, 5em);
+        font-size: clamp(5em, 10vw, 5em);
     }
 
     .calenvisorColumn,
