@@ -772,6 +772,39 @@ html {
         font-size: clamp(5em, 10vw, 5em);
     }
 
+    .secondDiv {
+        padding: 14vw 5vw 27vw 5vw;
+        min-height: 40em;
+    }
+
+    .secondDiv p {
+        font-size: clamp(5em, 10vw, 5em);
+    }
+
+    .playOn img {
+        padding: 11vw 0 0 0;
+        min-height: 10vw;
+        width: 30vw;
+        max-width: 300px;
+    }
+
+    .soldiers img {
+        width: 80vw;
+        max-width: 500px;
+        background-color: rgba(255, 255, 255, 0.027);
+        border-radius: 15px;
+    }
+
+    .thirdDiv {
+        padding: 10vw 5vw 23vw 5vw;
+        min-height: 40em;
+    }
+
+    .fourthDiv {
+        padding: 12vw 5vw 23vw 5vw;
+        min-height: 40em;
+    }
+
     .calenvisorColumn,
     .firstColumn,
     .secondColumn {
@@ -787,10 +820,6 @@ html {
         width: 90vw;
         max-width: 1000px;
         height: auto;
-    }
-
-    .secondDiv p {
-        font-size: clamp(5em, 10vw, 5em);
     }
 
     .fifthDiv figcaption,
@@ -822,7 +851,8 @@ html {
 
     .ED h1 {
         font-size: clamp(4.5em, 13vw, 9em);
-        margin-bottom: 0.2em;
+        margin-bottom: 0.1em;
+        text-align: right;
     }
 
     .ED p {
