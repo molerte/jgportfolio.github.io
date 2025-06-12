@@ -372,9 +372,7 @@ html {
 }
 
 .ED h1 {
-    background-image: url("../images/DBMSOverlay.jpg");
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(251, 59, 59);
     filter: drop-shadow(0 0 3px rgba(243, 58, 58, 0.623));
     font-size: 5.5vw;
     font-family: BEBAS, Arial, Helvetica, sans-serif;
@@ -500,13 +498,13 @@ html {
 }
 
 .fifthDiv h1 {
-    color: rgb(248, 58, 58);
+    color: rgb(248, 172, 58);
     padding-top: 0.2em;
     font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 7vw;
     text-align: center;
-    filter: drop-shadow(0 0 9px rgba(255, 14, 14, 0.836));
+    filter: drop-shadow(0 0 9px rgba(255, 179, 14, 0.599));
 }
 
 .projectRow {
@@ -558,8 +556,8 @@ html {
 .firstColumn b,
 .secondColumn b {
     font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
-    color: rgb(243, 61, 61);
-    filter: drop-shadow(0 0 5px rgba(248, 58, 58, 0.449));
+    color: rgb(243, 149, 61);
+    filter: drop-shadow(0 0 5px rgba(248, 137, 58, 0.449));
     font-size: 1.4em;
 }
 
@@ -795,12 +793,21 @@ html {
         border-radius: 15px;
     }
 
+    .firstDiv {
+        display: none;
+    }
+
     .thirdDiv {
         padding: 10vw 5vw 23vw 5vw;
         min-height: 40em;
     }
 
     .fourthDiv {
+        padding: 12vw 5vw 23vw 5vw;
+        min-height: 40em;
+    }
+
+    .fifthDiv {
         padding: 12vw 5vw 23vw 5vw;
         min-height: 40em;
     }

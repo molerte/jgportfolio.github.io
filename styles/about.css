@@ -547,6 +547,10 @@ html {
         border-bottom: 1px solid rgba(255,255,255,0.1);
     }
 
+    .firstDiv {
+        display: none;
+    }
+
     .firstDiv h1 {
         font-size: clamp(5em, 10vw, 5em);
     }
@@ -582,7 +586,7 @@ html {
     }
 
     .row {
-        gap: 2.5em 1.5em;
+        gap: 1.5em 1.5em;
     }
 
     .secondDiv img {
@@ -592,8 +596,10 @@ html {
     }
 
     .skillsColumn {
-        width: 40%;
-        max-width: 480px;
+        padding: 5vw 0 0 0;
+        min-height: 5vw;
+        width: 10vw;
+        max-width: 300px;
     }
 
     .fourthDiv h1 {
