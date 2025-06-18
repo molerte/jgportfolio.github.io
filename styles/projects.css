@@ -87,14 +87,15 @@ html {
 }
 
 .firstDiv h1 {
-    background: -webkit-linear-gradient(141deg, rgb(255, 255, 255) 0%, rgb(255, 234, 196) 100%);
+    background: -webkit-linear-gradient(141deg, rgb(255, 255, 255) 0%, rgb(248, 190, 135) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.151));
-    font-size: 15vw; 
+    font-size: 12vw; 
     text-align: center;
-    font-family: BEBAS, Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
+    padding-top: 0.4em;
+    font-weight: 200;
     word-break: break-word;
     margin: 0; 
 }
@@ -147,7 +148,7 @@ html {
 }
 
 .lmsRow .lmsGameplay img {
-    height: auto;
+    height: 30em;
     border-radius: 15px;
     filter: drop-shadow(0 0 10px rgba(255, 143, 143, 0.548));
     margin: 0;
@@ -178,7 +179,7 @@ html {
 }
 
 .lmsRowBottom .lmsGameplayWinter img {
-    height: auto;
+    height: 30em;
     border-radius: 15px;
     filter: drop-shadow(0 0 10px rgba(165, 253, 153, 0.534));
     margin: 0;
@@ -498,13 +499,13 @@ html {
 }
 
 .fifthDiv h1 {
-    color: rgb(248, 172, 58);
+    color: rgb(248, 58, 58);
     padding-top: 0.2em;
     font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 7vw;
     text-align: center;
-    filter: drop-shadow(0 0 9px rgba(255, 179, 14, 0.599));
+    filter: drop-shadow(0 0 9px rgba(255, 14, 14, 0.599));
 }
 
 .projectRow {
@@ -556,8 +557,8 @@ html {
 .firstColumn b,
 .secondColumn b {
     font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
-    color: rgb(243, 149, 61);
-    filter: drop-shadow(0 0 5px rgba(248, 137, 58, 0.449));
+    color: rgb(243, 61, 61);
+    filter: drop-shadow(0 0 5px rgba(248, 58, 58, 0.449));
     font-size: 1.4em;
 }
 
