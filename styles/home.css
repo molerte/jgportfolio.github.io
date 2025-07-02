@@ -595,34 +595,6 @@ html {
         font-size: clamp(1.5em, 6vw, 3em);
         padding: 15px;
     }
-
-    .alert {
-        padding: 20px;
-        width: auto;
-        background-color: #f44336;
-        color: white;
-        font-size: 22px;
-        position: fixed;
-        z-index: 1000;
-        bottom: 0;
-        transition: 0.3s;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .closebtn {
-        margin-left: 15px;
-        margin-top: 10px;
-        color: white;
-        float: right;
-        font-size: 55px;
-        line-height: 20px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    .closebtn:hover {
-        color: black;
-    }
 }
 
 
