@@ -71,7 +71,7 @@ html {
 
 .firstDiv {
     position: relative;
-    background-color: irl("images/homebanner.jpg");
+    background-color: url("images/homebanner.jpg");
     padding: 6vw 3vw 3vw 3vw;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 28em;
@@ -367,7 +367,7 @@ html {
     padding: 1em 0;
     color: #fff;
     font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: 100;
     transition: 1s;
 }
 
