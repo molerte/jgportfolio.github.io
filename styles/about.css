@@ -314,6 +314,8 @@ html {
     will-change: transform;
 }
 
+
+/***************************************************** Greyscaling options for this application ******************************/
 .moving-slide img {
     padding-top: 1.5em;
     height: 6em;
@@ -324,6 +326,7 @@ html {
     max-width: 90vw;
     width: auto;
 
+    filter: grayscale(100%)  drop-shadow(0 0 5px rgba(0, 0, 0, 0.219));
     /*OPTIONAL: SET THE IMAGE MONOSCHROME WHEN NOT HOVERING
 
     filter: grayscale(100%)  drop-shadow(0 0 5px rgba(0, 0, 0, 0.219));*/
@@ -332,6 +335,13 @@ html {
 .moving-slide img:hover {
     filter: drop-shadow(0 0 10px rgba(176, 97, 250, 0.884));
     transform: scale(1.1);
+
+    filter: none; 
+    -webkit-filter: grayscale(0%);
+
+
+
+
 
     /*OPTIONAL: SHOW COLORS WHEN HOVERING THE IMAGES*
 
