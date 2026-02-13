@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8"> <!-- I had fun writing this page-->
         <meta name="viewport" content="width=device-width,initial-scale = 1.0,maximum-scale = 1.0">
         <title>Home | Jason's Portfolio</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!--Insert fonts here-->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belleza&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="styles/home.css">
         <link rel="icon" href="images/logo_bo.png">
     </head>
 
     <body>
-        <div id="mobile-nav-bar">
+        <div id="mobile-nav-bar"> <!-- Hired? [X] Fired? [YES] HOLY AIRBALL!-->
             <img src="images/molerteFAVI2.png" alt="logo">
             <button id="mobile-nav-toggle" aria-label="Open navigation">
                 <span class="bar"></span>
@@ -71,26 +78,26 @@
                     </div>
                 </div>
 
-                <div class="moving reveal">
+                <div class="moving reveal"> <!--VULNERABLE TO XSS LMAOOO (Do I care??? HELL YEAH BUT I DONT HAVE A BUCKET/DATABASE LOL)-->
                     <div class="moving">
                         <div class="moving-slide">
                             <img src="images/topoutPORCHE911.jpg" alt="porsche">
-                            <img src="images/curtainsalbumcoverCURAINTS.jpg" alt="curtains">
+                            <img src="images/beauties.jpg" alt="curtains">
                             <img src="images/tuxGUYALBUMTONEDARKPA.jpg" alt="tux">
                             <img src="images/porsche911drive2.jpg" alt="porsche2">
-                            <img src="images/DKNEW-Recovered.jpg" alt="15am">
-                            <img src="images/15amtilt.jpg" alt="tilt">
+                            <img src="images/DKNEW1.jpg" alt="15am">
+                            <img src="images/HolmgrenPower.jpg" alt="tilt">
                             <img src="images/catsAlbum.jpg" alt="cats">
                             <img src="images/albumcover22COVERCLOUDS.jpg" alt="clouds">
                         </div>
 
-                        <div class="moving-slide">
+                        <div class="moving-slide"> 
                             <img src="images/topoutPORCHE911.jpg" alt="porsche">
-                            <img src="images/curtainsalbumcoverCURAINTS.jpg" alt="curtains">
+                            <img src="images/beauties.jpg" alt="curtains">
                             <img src="images/tuxGUYALBUMTONEDARKPA.jpg" alt="tux">
                             <img src="images/porsche911drive2.jpg" alt="porsche2">
-                            <img src="images/DKNEW-Recovered.jpg" alt="15am">
-                            <img src="images/15amtilt.jpg" alt="tilt">
+                            <img src="images/DKNEW1.jpg" alt="15am">
+                            <img src="images/HolmgrenPower.jpg" alt="tilt">
                             <img src="images/catsAlbum.jpg" alt="cats">
                             <img src="images/albumcover22COVERCLOUDS.jpg" alt="clouds">
                         </div>
@@ -105,7 +112,7 @@
 
                 <div class="fifthDiv">
                     <div class="copyright">
-                        <p>&#169 2025 Jason Garcia | Business Inquiries: jasoneg013@gmail.com | Phone: 843.489.2237</p>
+                        <p>&#169 2026 Jason Garcia | Business Inquiries: jasoneg013@gmail.com | Phone: 843.489.2237</p>
                     </div>
 
                     <div class="socials">
@@ -116,7 +123,7 @@
                 </div>
             </section>
 
-            <script>
+            <script>  {/*Error: Your code is ass*/}
                 document.addEventListener("DOMContentLoaded", function() {
                 const reveals = document.querySelectorAll('.reveal');
                 const observer = new IntersectionObserver((entries, observer) => {
@@ -134,7 +141,7 @@
                 })
             </script>
 
-            <script>
+            <script> {/*Nahh this is fire effect*&?*/}
                 document.getElementById('mobile-nav-toggle').onclick = function() {
                     this.classList.toggle('open');
                     document.querySelector('#nav_menu ul').classList.toggle('open');
@@ -159,7 +166,7 @@
                         navToggle.classList.remove('open');
                     })
                 })
-
+                   
                 document.addEventListener('click', function(event) {
                     const isMenuOpen = navMenu.classList.contains('open');
                     if (

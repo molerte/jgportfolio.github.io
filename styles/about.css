@@ -89,9 +89,9 @@ html {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.151));
     font-size: 12vw; 
     text-align: center;
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     padding-top: 0.4em;
-    font-weight: 200;
+    font-weight: 600;
     word-break: break-word;
 }
 
@@ -132,16 +132,16 @@ html {
 
 .whoAmI h1 {
     color: rgb(255, 33, 33);
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 3em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-size: 4em;
     margin-bottom: 0.5em;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.13));
 }
 
 .whoAmI p {
     color: rgb(255, 255, 255);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Zalando Sans", sans-serif;
     font-weight: 500;
     font-size: 1.5em;
 }
@@ -172,9 +172,9 @@ html {
 
 .motive h1 {
     color: rgb(255, 33, 33);
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 3em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-size: 4em;
     margin-bottom: 0.5em;
     animation: transitionIn 1.5s;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.13));
@@ -182,7 +182,7 @@ html {
 
 .motive p {
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Zalando Sans", sans-serif;
     font-weight: 500;
     font-size: 1.5em;
     animation: fade-up 0.7s;
@@ -198,15 +198,15 @@ html {
 
 .thirdDiv h1 {
     text-align: center;
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
     font-size: 7vw; 
     color: #ffffff;
-    font-weight: 100;
 }
 
 .thirdDiv p {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Zolando Sans', sans-serif;
     font-weight: 300;
     color: #ffffff;
     font-size: 1.3em;
@@ -232,7 +232,7 @@ html {
 .row figcaption {
     margin-top: 1em;
     width: 100%;
-    font-family: Bebas, Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 100;
     text-align: center;
     color: #ffffff;
@@ -275,7 +275,7 @@ html {
 
 .fourthDiv h1 {
     text-align: center;
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-weight: 200;
     font-size: 7vw; 
     padding-top: 0.2em;
@@ -284,7 +284,7 @@ html {
 
 .fourthDiv p {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Zolando Sans', sans-serif;
     font-weight: 300;
     color: #0b0b0b;
     font-size: 1.3em;
@@ -356,7 +356,8 @@ html {
 
 .copyright p {
     color: white;
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
     text-align: center;
     padding-top: 2em;
 }
@@ -432,8 +433,8 @@ html {
     text-decoration: none;
     padding: 1em 0;
     color: #fff;
-    font-family: DOGMA DEMO Regular, Arial, sans-serif;
-    font-weight: 100;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
     transition: 1s;
 }
 

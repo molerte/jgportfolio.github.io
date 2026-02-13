@@ -93,9 +93,9 @@ html {
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.151));
     font-size: 12vw; 
     text-align: center;
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     padding-top: 0.4em;
-    font-weight: 200;
+    font-weight: 600;
     word-break: break-word;
     margin: 0; 
 }
@@ -137,8 +137,8 @@ html {
 .lmsRow p {
     flex: 1 1 0;
     color: rgb(255, 113, 113);
-    font-family: '8-bit Fortress Regular', monospace;
-    font-size: 1.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 2em;
     font-weight: 550;
     animation: fade-up 0.7s;
     filter: drop-shadow(0 0 10px rgba(255, 68, 68, 0.603));
@@ -168,8 +168,8 @@ html {
 .lmsRowBottom p {
     flex: 1 1 0;
     color: rgb(187, 255, 131);
-    font-family: '8-bit Fortress Regular', monospace;
-    font-size: 1.5em;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 2em;
     font-weight: 550;
     animation: fade-up 0.7s;
     filter: drop-shadow(0 0 10px rgba(91, 255, 91, 0.603));
@@ -271,7 +271,7 @@ html {
 
 .row figcaption {
     color: rgb(226, 226, 226);
-    font-family: Bebas, Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     font-size: 1.2em;
     text-align: center;
     max-width: 24em;      /* Set a shorter maximum width */
@@ -284,10 +284,10 @@ html {
     text-align: center;
     font-size: 7vw;
     margin-top: 0.1em;
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
     animation: fade-up 0.7s;
-    filter: drop-shadow(0 0 8px rgba(84, 72, 252, 0.438));
+    /*filter: drop-shadow(0 0 8px rgba(84, 72, 252, 0.438));*/
 }
 
 .thirdDiv p {
@@ -295,7 +295,7 @@ html {
     text-align: left;
     font-size: 1.6em;
     margin-top: 1em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Zalando Sans", sans-serif;
     font-weight: 500;
     max-width: 50em;
     margin-left: auto;
@@ -305,7 +305,7 @@ html {
 .calenvisorLang {
     text-align: center;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Zalando Sans", sans-serif;
     font-size: 1.2em;
     animation: fade-up 0.7s;
     margin-bottom: 1em;
@@ -349,7 +349,7 @@ html {
 .dbmsLang {
     text-align: center;
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Zalando Sans", sans-serif;
     font-size: 1.2em;
     animation: fade-up 0.7s;
     margin-bottom: 1em;
@@ -373,9 +373,9 @@ html {
 
 .ED h1 {
     color: rgb(251, 59, 59);
-    filter: drop-shadow(0 0 3px rgba(243, 58, 58, 0.623));
+    /*filter: drop-shadow(0 0 3px rgba(243, 58, 58, 0.623));*/
     font-size: 5.5vw;
-    font-family: BEBAS, Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     text-align: left;
     margin: 0 0 0 0.7em;
     min-width: 2em;
@@ -388,7 +388,7 @@ html {
     -webkit-text-fill-color: transparent;
     font-weight: 500;
     font-size: 1.6em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Zalando Sans", sans-serif;
     max-width: 28em;
     margin: 0;
     padding: 0 1em;
@@ -500,11 +500,10 @@ html {
 .fifthDiv h1 {
     color: rgb(248, 58, 58);
     padding-top: 0.2em;
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
-    font-weight: 100;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
     font-size: 7vw;
     text-align: center;
-    filter: drop-shadow(0 0 9px rgba(255, 14, 14, 0.599));
 }
 
 .projectRow {
@@ -544,7 +543,7 @@ html {
 
 .fifthDiv figcaption {
     color: rgb(226, 226, 226);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Zalando Sans", sans-serif;
     font-size: 1.3em;
     font-weight: 500;
     text-align: left;
@@ -555,9 +554,9 @@ html {
 
 .firstColumn b,
 .secondColumn b {
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
     color: rgb(243, 61, 61);
-    filter: drop-shadow(0 0 5px rgba(248, 58, 58, 0.449));
+    /*filter: drop-shadow(0 0 5px rgba(248, 58, 58, 0.449));*/
     font-size: 1.4em;
 }
 
@@ -568,7 +567,8 @@ html {
 
 .copyright {
     color: #fff;
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
     text-align: center;
     padding-top: 2em;
 }
@@ -640,8 +640,8 @@ html {
     text-decoration: none;
     padding: 1em 0;
     color: #fff;
-    font-family: DOGMA DEMO Regular, Arial, Helvetica, sans-serif;
-    font-weight: 100;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
     transition: 1s;
 }
 
