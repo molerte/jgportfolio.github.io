@@ -8,18 +8,6 @@ html {
     overflow-x: hidden;
 }
 
-@font-face {
-    font-family: 'Bebas';
-    src: url('bebas_neue.otf') format('opentype');
-}
-@font-face {
-    font-family: 'Mermaid';
-    src: url('mermaid.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'DOGMA DEMO Regular';
-    src: url('DOGMA.OTF') format('opentype');
-}
 
 @keyframes slide {
     from {
@@ -116,9 +104,9 @@ html {
 
 .secondDiv {
     position: relative;
-    background-image: url("../images/homebanner.jpg");
+    background-image: url("images/homebanner.jpg");
     margin-top: 0;
-    padding: 2em 1em 10em 1em;
+    padding: 4em 1em 10em 1em;
     min-height: 8em;
     box-sizing: border-box;
 }
@@ -127,15 +115,15 @@ html {
     color: #fff;
     text-align: center;
     font-size: 1.5em;
-    font-family: "Young Serif", serif;
+    font-family: "Oranienbaum", sans-serif;
     letter-spacing: -0.02em;
     max-width: 35em;
     margin: 0 auto;
     white-space: normal;
 }
 
-.hello b {
-    font-family: "Young Serif", serif;
+.hello p {
+    font-family: "Pixelify Sans", sans-serif;
     letter-spacing: -0.02em;
     color: #E1060A;
     /*filter: drop-shadow(0 0 2px rgb(255, 17, 17));*/ /*no need for that lmaoo*/
@@ -163,7 +151,7 @@ html {
 .row figcaption {
     margin-top: 1em;
     width: 100%;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
     text-align: center;
     color: #fff;
     font-size: 1.2em;
@@ -199,23 +187,23 @@ html {
 
 .thirdDiv {
     position: relative;
-    background-color: url("images/homebanner");
+    background-color: url("images/homebanner.jpg");
     margin-top: 0;
-    padding: 2em 1em 5em 0;
+    padding: 6em 1em 5em 0;
     min-height: 8em;
     box-sizing: border-box;
 }
 
 .edits {
     color: #fff;
-    font-family: "Young Serif", serif;
+    font-family: "Oranienbaum", sans-serif;
     text-align: center;
     font-size: 1.5em;
 }
 
 .edits p {
     color: #E1060A;
-    font-family: "Young Serif", serif;
+    font-family: "Pixelify Sans", sans-serif;
     /*filter: drop-shadow(0 0 2px rgb(255, 17, 17));*/
 }
 
@@ -278,7 +266,7 @@ html {
     flex: 0 1 auto;
     margin: 0 auto;
     text-align: center;
-    font-family: "Young Serif", serif;
+    font-family: "Pixelify Sans", sans-serif;
     width: 100%;
     font-weight: 500;
     font-size: 5em;
@@ -351,7 +339,9 @@ html {
     padding: 0;
     margin: 0;
     position: fixed;
-    background-image: url("../images/NavBan.jpg");
+    /*background-image: url("../images/NavBan.jpg"); */
+    background-color: rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(7px);
     filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.925));
     z-index: 4;
 }

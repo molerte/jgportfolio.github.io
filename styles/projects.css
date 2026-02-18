@@ -8,18 +8,6 @@ html {
     overflow-x: hidden;
 }
 
-@font-face {
-    font-family: 'Bebas';
-    src: url('bebas_neue.otf') format('opentype');
-}
-@font-face {
-    font-family: 'Mermaid';
-    src: url('mermaid.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'DOGMA DEMO Regular';
-    src: url('DOGMA.OTF') format('opentype');
-}
 
 @keyframes slide {
     from {
@@ -71,7 +59,7 @@ html {
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0)
+    transform: translateY(0);
 }
 
 .firstDiv {
@@ -87,17 +75,18 @@ html {
 }
 
 .firstDiv h1 {
-    background: -webkit-linear-gradient(141deg, rgb(255, 255, 255) 0%, rgb(248, 190, 135) 100%);
+    background: -webkit-linear-gradient(141deg, rgb(255, 127, 127) 0%, rgb(243, 168, 98) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.151));
-    font-size: 12vw; 
+    font-size: 10vw; 
     text-align: center;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
+    /*border-bottom: 1rem solid #fbb879;*/
     padding-top: 0.4em;
     font-weight: 600;
     word-break: break-word;
-    margin: 0; 
+    margin: 0;
 }
 
 .secondDiv {
@@ -139,7 +128,6 @@ html {
     color: rgb(255, 113, 113);
     font-family: "Pixelify Sans", sans-serif;
     font-size: 2em;
-    font-weight: 550;
     animation: fade-up 0.7s;
     filter: drop-shadow(0 0 10px rgba(255, 68, 68, 0.603));
     text-align: left;
@@ -170,7 +158,6 @@ html {
     color: rgb(187, 255, 131);
     font-family: "Pixelify Sans", sans-serif;
     font-size: 2em;
-    font-weight: 550;
     animation: fade-up 0.7s;
     filter: drop-shadow(0 0 10px rgba(91, 255, 91, 0.603));
     text-align: left;
@@ -271,7 +258,7 @@ html {
 
 .row figcaption {
     color: rgb(226, 226, 226);
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Oranienbaum", sans-serif;
     font-size: 1.2em;
     text-align: center;
     max-width: 24em;      /* Set a shorter maximum width */
@@ -284,7 +271,7 @@ html {
     text-align: center;
     font-size: 7vw;
     margin-top: 0.1em;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
     font-weight: 600;
     animation: fade-up 0.7s;
     /*filter: drop-shadow(0 0 8px rgba(84, 72, 252, 0.438));*/
@@ -293,9 +280,9 @@ html {
 .thirdDiv p {
     color: #ffffff;
     text-align: left;
-    font-size: 1.6em;
+    font-size: 1.7em;
     margin-top: 1em;
-    font-family: "Zalando Sans", sans-serif;
+    font-family: "Oranienbaum", sans-serif;
     font-weight: 500;
     max-width: 50em;
     margin-left: auto;
@@ -305,7 +292,7 @@ html {
 .calenvisorLang {
     text-align: center;
     color: white;
-    font-family: "Zalando Sans", sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
     font-size: 1.2em;
     animation: fade-up 0.7s;
     margin-bottom: 1em;
@@ -349,7 +336,7 @@ html {
 .dbmsLang {
     text-align: center;
     color: white;
-    font-family: "Zalando Sans", sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
     font-size: 1.2em;
     animation: fade-up 0.7s;
     margin-bottom: 1em;
@@ -375,7 +362,7 @@ html {
     color: rgb(251, 59, 59);
     /*filter: drop-shadow(0 0 3px rgba(243, 58, 58, 0.623));*/
     font-size: 5.5vw;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
     text-align: left;
     margin: 0 0 0 0.7em;
     min-width: 2em;
@@ -387,8 +374,8 @@ html {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
-    font-size: 1.6em;
-    font-family: "Zalando Sans", sans-serif;
+    font-size: 1.7em;
+    font-family: "Oranienbaum", sans-serif;
     max-width: 28em;
     margin: 0;
     padding: 0 1em;
@@ -500,7 +487,7 @@ html {
 .fifthDiv h1 {
     color: rgb(248, 58, 58);
     padding-top: 0.2em;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Pixelify Sans", sans-serif;
     font-weight: 600;
     font-size: 7vw;
     text-align: center;
@@ -543,7 +530,7 @@ html {
 
 .fifthDiv figcaption {
     color: rgb(226, 226, 226);
-    font-family: "Zalando Sans", sans-serif;
+    font-family: "Oranienbaum", sans-serif;
     font-size: 1.3em;
     font-weight: 500;
     text-align: left;
@@ -623,7 +610,9 @@ html {
     padding: 0;
     margin: 0;
     position: fixed;
-    background-image: url("../images/NavBan.jpg");
+    /*background-image: url("../images/NavBan.jpg");*/
+    background-color: rgba(0, 0, 0, 0.411);
+    backdrop-filter: blur(7px);
     filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.925));
     z-index: 4;
 }
