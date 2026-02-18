@@ -229,7 +229,7 @@
                 </div>
 
                 <div id="intro" class="intro hidden" aria-hidden="true">
-                    <img src="../images/webintroM.gif" alt="intro">
+                    <img src="../images/webIntroM.gif" alt="intro">
                 </div>  
             </section>
 
@@ -327,7 +327,7 @@
                     const intro = document.getElementById("intro");
 
                     if (!intro) return;
-                    const seen = localStorage.getItem(KEY) == "true"; /*set to true once tested timing*/
+                    const seen = localStorage.getItem(KEY) == "false"; /*set to true once tested timing*/
 
                     if(!seen) {
                         intro.classList.remove("hidden");
