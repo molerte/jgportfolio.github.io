@@ -121,6 +121,10 @@
                         <li><a href="https://www.youtube.com/channel/UC2F59H8PSdkOaFJs3yt7yYw" class="fa fa-youtube"></a></li>
                     </div>
                 </div>
+
+                <div id="intro" class="intro hidden" aria-hidden="true">
+                    <img src="images/webintroM.gif" alt="intro">
+                </div>  
             </section>
 
             <script>  {/*Error: Your code is ass*/}
@@ -206,6 +210,30 @@
                 })
             })
             </script>
+
+            <script>
+                (function () {
+                    const KEY = "hasSeenIntro";
+                    const intro = document.getElementById("intro");
+
+                    if (!intro) return;
+                    const seen = localStorage.getItem(KEY) == "true"; /*set to true once tested timing*/
+
+                    if(!seen) {
+                        intro.classList.remove("hidden");
+                        intro.setAttribute("aria-hidden", "false");
+
+                        setTimeout(() => {
+                            intro.classList.add("fade-out");
+                            setTimeout(() => {
+                                intro.classList.add("hidden");
+                                intro.setAttribute("aria-hidden", "true");
+                            }, 500); 
+                        }, 1800);
+                            localStorage.setItem(KEY, "true");
+                        }
+                    })();
+                </script>
         </main>
     </body>
 </html>
