@@ -75,13 +75,13 @@ html {
 
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.9s ease, transform 0.9s ease;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .reveal.active {
     opacity: 1;
-    transform: translateY(0)
+    transform: translateY(0);
 }
 
 .firstDiv {
@@ -515,6 +515,24 @@ html {
         padding: 1em 0;
         display: block;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .intro img {
+        width: 100vw;
+        height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .intro img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
     }
 
     .firstDiv {

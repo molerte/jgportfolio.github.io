@@ -74,8 +74,8 @@ html {
 
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.9s ease, transform 0.9s ease;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .reveal.active {
@@ -135,7 +135,7 @@ html {
 .whoAmI img {
     width: 35em;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.253));
     flex-shrink: 0;
     margin-top: 4em;
@@ -174,7 +174,7 @@ html {
 .motive img {
     width: 35em;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.253));
     animation: transitionIn 1.5s;
     flex-shrink: 0;
@@ -574,6 +574,24 @@ html {
         padding: 1em 0;
         display: block;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .intro img {
+        width: 100vw;
+        height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .intro img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
     }
 
     .firstDiv {

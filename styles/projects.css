@@ -71,7 +71,7 @@ html {
     pointer-events: none;
 }
 
-.intro-gif {
+.intro-gif { /*May not need this (previous named)*/
     max-width: min(90vw, 700px);
     max-height: 80vh;
     object-fit: contain;
@@ -79,8 +79,8 @@ html {
 
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.9s ease, transform 0.9s ease;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .reveal.active {
@@ -117,7 +117,7 @@ html {
 
 .secondDiv {
     position: relative;
-    background-image: url("../images/homebanner.jpg");
+    background-image: url("../images/NavBan.jpg");
     padding: 4vw 2vw 6vw 2vw;
     min-height: 20em;
     font-family: Mermaid, Arial, Helvetica, sans-serif;
@@ -161,10 +161,17 @@ html {
     max-width: 32em;
 }
 
+.lmsRow p:hover {
+    background-color: #e2e2e2;
+    color: black;
+    filter: none;
+}
+
 .lmsRow .lmsGameplay img {
     height: 30em;
     border-radius: 15px;
-    filter: drop-shadow(0 0 10px rgba(255, 143, 143, 0.548));
+    border: 1px solid #ff5656;
+    /*filter: drop-shadow(0 0 10px rgba(255, 143, 143, 0.548));*/
     margin: 0;
     display: block;
 }
@@ -191,10 +198,17 @@ html {
     max-width: 32em;
 }
 
+.lmsRowBottom p:hover {
+    background-color: #e2e2e2;
+    color: black;
+    filter: none;
+}
+
 .lmsRowBottom .lmsGameplayWinter img {
     height: 30em;
     border-radius: 15px;
-    filter: drop-shadow(0 0 10px rgba(165, 253, 153, 0.534));
+    /*filter: drop-shadow(0 0 10px rgba(165, 253, 153, 0.534));*/
+    border: 1px solid #69ff56;
     margin: 0;
     display: block;
 }
@@ -352,7 +366,7 @@ html {
 
 .fourthDiv {
     position: relative;
-    background-image: url("../images/homebanner.jpg");
+    background-image: url("../images/NavBan.jpg");
     padding: 4vw 2vw 5vw 2vw;
     min-height: 30em;
     font-family: mermaid, Arial, Helvetica, sans-serif;
@@ -395,10 +409,14 @@ html {
     flex-shrink: 0;
 }
 
+.ED h1:hover {
+    background-color: #e2e2e2;
+    color: black;
+    filter: none;
+}
+
 .ED p {
-    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 1.7em;
     font-family: "Oranienbaum", sans-serif;
@@ -407,6 +425,12 @@ html {
     padding: 0 1em;
     text-align: left;
     flex: 1 1 0;
+}
+
+.ED p:hover {
+    background-color: #e2e2e2;
+    color: black;
+    filter: none;
 }
 
 .dbmsLogo img {
@@ -495,7 +519,7 @@ html {
 }
 
 .dot.active, .dot:hover {
-    background-color: #e2e2e2;
+    background-color: #ffffff;
 }
 
 .fade {
@@ -779,6 +803,24 @@ html {
         padding: 1em 0;
         display: block;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .intro img {
+        width: 100vw;
+        height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .intro img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
     }
 
     .firstDiv h1{
