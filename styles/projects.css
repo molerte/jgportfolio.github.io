@@ -59,7 +59,7 @@ html {
     display: grid;
     place-items: center;
     opacity: 1;
-    transition: opacity 500ms ease, pointer-events 500ms ease;
+    transition: opacity 500ms linear, pointer-events 500ms linear;
 }
 
 .intro.hidden {
@@ -90,7 +90,7 @@ html {
 
 .firstDiv {
     position: relative;
-    background-image: url("../images/homebanner2.jpg");
+    backdrop-filter: brightness(0.6);
     min-height: 30em;
     box-sizing: border-box;
     overflow: hidden;
@@ -118,10 +118,17 @@ html {
 .secondDiv {
     position: relative;
     background-image: url("../images/NavBan.jpg");
+    filter: brightness(0.3);
     padding: 4vw 2vw 6vw 2vw;
     min-height: 20em;
     font-family: Mermaid, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.secondDiv:hover {
+    filter: none;
+    transition: 0.5s;
 }
 
 .secondDiv img {
@@ -151,11 +158,11 @@ html {
 
 .lmsRow p {
     flex: 1 1 0;
-    color: rgb(255, 113, 113);
+    color: rgb(255, 255, 255);
     font-family: "Pixelify Sans", sans-serif;
     font-size: 2em;
     animation: fade-up 0.7s;
-    filter: drop-shadow(0 0 10px rgba(255, 68, 68, 0.603));
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.603));
     text-align: left;
     margin: 0;
     max-width: 32em;
@@ -169,9 +176,9 @@ html {
 
 .lmsRow .lmsGameplay img {
     height: 30em;
-    border-radius: 15px;
-    border: 1px solid #ff5656;
-    /*filter: drop-shadow(0 0 10px rgba(255, 143, 143, 0.548));*/
+    border-radius: 5px;
+    /*border: 1px solid #ff5656;*/
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.144));
     margin: 0;
     display: block;
 }
@@ -188,11 +195,11 @@ html {
 
 .lmsRowBottom p {
     flex: 1 1 0;
-    color: rgb(187, 255, 131);
+    color: rgb(255, 255, 255);
     font-family: "Pixelify Sans", sans-serif;
     font-size: 2em;
     animation: fade-up 0.7s;
-    filter: drop-shadow(0 0 10px rgba(91, 255, 91, 0.603));
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.603));
     text-align: left;
     margin: 0;
     max-width: 32em;
@@ -206,9 +213,10 @@ html {
 
 .lmsRowBottom .lmsGameplayWinter img {
     height: 30em;
-    border-radius: 15px;
-    /*filter: drop-shadow(0 0 10px rgba(165, 253, 153, 0.534));*/
-    border: 1px solid #69ff56;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.144));
+    margin: 0;
+    /*border: 1px solid #69ff56;*/
     margin: 0;
     display: block;
 }
@@ -236,10 +244,17 @@ html {
 
 .thirdDiv {
     position: relative;
-    background-image: url("../images/homebanner2.jpg");
+    backdrop-filter: brightness(0.6);
     padding: 4vw 2vw 4vw 2vw;
     min-height: 30em;
     box-sizing: border-box;
+    filter: brightness(0.3);
+    transition: 0.5s;
+}
+
+.thirdDiv:hover {
+    filter: none;
+    transition: 0.5s;
 }
 
 .calenvisorLogo img {
@@ -276,7 +291,7 @@ html {
     height: auto;
     display: block;
     margin: 0 auto 1em auto;
-    border-radius: 10px;
+    border-radius: 5px;
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.678));
 }
 
@@ -314,7 +329,7 @@ html {
     font-family: "Pixelify Sans", sans-serif;
     font-weight: 600;
     animation: fade-up 0.7s;
-    /*filter: drop-shadow(0 0 8px rgba(84, 72, 252, 0.438));*/
+    filter: drop-shadow(0 0 8px rgba(84, 72, 252, 0.438));
 }
 
 .thirdDiv p {
@@ -356,7 +371,7 @@ html {
     width: 900px;     
     height: 506px;     
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .video iframe:hover {
@@ -371,6 +386,13 @@ html {
     min-height: 30em;
     font-family: mermaid, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    filter: brightness(0.3);
+    transition: 0.5s;
+}
+
+.fourthDiv:hover {
+    filter: none;
+    transition: 0.5s;
 }
 
 .dbmsLang {
@@ -454,7 +476,7 @@ html {
     width: 98vw;        
     max-width: 100em;   
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: 0.5s;
 }
 
@@ -528,7 +550,7 @@ html {
 }
 
 .fifthDiv {
-    background-image: url("../images/homebanner2.jpg");
+    backdrop-filter: brightness(0.6);
     padding: 2vw 2vw 4vw 2vw;
     min-height: 30em;
     box-sizing: border-box;
@@ -538,6 +560,7 @@ html {
     color: rgb(248, 58, 58);
     padding-top: 0.2em;
     font-family: "Pixelify Sans", sans-serif;
+    filter: drop-shadow(0 0 5px rgba(248, 58, 58, 0.449));
     font-weight: 600;
     font-size: 7vw;
     text-align: center;
@@ -574,7 +597,7 @@ html {
     height: auto;
     display: block;
     margin: 0 auto 1em auto;
-    border-radius: 10px;
+    border-radius: 5px;
     filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.678));
 }
 
@@ -830,6 +853,7 @@ html {
     .secondDiv {
         padding: 14vw 5vw 27vw 5vw;
         min-height: 40em;
+        filter: none;
     }
 
     .secondDiv p {
@@ -857,11 +881,13 @@ html {
     .thirdDiv {
         padding: 10vw 5vw 23vw 5vw;
         min-height: 40em;
+        filter: none;
     }
 
     .fourthDiv {
         padding: 12vw 5vw 23vw 5vw;
         min-height: 40em;
+        filter: none;
     }
 
     .fifthDiv {

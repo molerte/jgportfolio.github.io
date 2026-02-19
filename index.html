@@ -217,26 +217,21 @@
 
             <script>
                 (function () {
-                    const KEY = "hasSeenIntro";
                     const intro = document.getElementById("intro");
-
                     if (!intro) return;
-                    const seen = localStorage.getItem(KEY) == "false"; /*set to true once tested timing*/
 
-                    if(!seen) {
-                        intro.classList.remove("hidden");
-                        intro.setAttribute("aria-hidden", "false");
-                       
+                    intro.classList.remove("hidden");
+                    intro.classList.remove("fade-out");
+                    intro.setAttribute("aria-hidden", "false");
+
+                    setTimeout(() => {
+                        intro.classList.add("fade-out");
                         setTimeout(() => {
-                            intro.classList.add("fade-out");
-                            setTimeout(() => {
-                                intro.classList.add("hidden");
-                                intro.setAttribute("aria-hidden", "true");
-                            }, 500); 
-                        }, 1800);
-                            localStorage.setItem(KEY, "true");
-                        }
-                    })();
+                            intro.classList.add("hidden");
+                            intro.setAttribute("aria-hidden", "true");
+                        }, 500);
+                    }, 1800);
+                })();
                 </script>
         </main>
     </body>

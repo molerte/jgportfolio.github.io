@@ -319,31 +319,27 @@
                     }
 
                 });
-            </script>
 
+            </script>
+                
             <script>
                 (function () {
-                    const KEY = "hasSeenIntro-[Projects]"; 
                     const intro = document.getElementById("intro");
-
                     if (!intro) return;
-                    const seen = localStorage.getItem(KEY) == "false"; /*set to true once tested timing*/
 
-                    if(!seen) {
-                        intro.classList.remove("hidden");
-                        intro.setAttribute("aria-hidden", "false");
+                    intro.classList.remove("hidden");
+                    intro.classList.remove("fade-out");
+                    intro.setAttribute("aria-hidden", "false");
 
+                    setTimeout(() => {
+                        intro.classList.add("fade-out");
                         setTimeout(() => {
-                            intro.classList.add("fade-out");
-                            setTimeout(() => {
-                                intro.classList.add("hidden");
-                                intro.setAttribute("aria-hidden", "true");
-                            }, 500); 
-                        }, 1000);
-                            localStorage.setItem(KEY, "true");
-                        }
-                    })();
-                </script>
+                            intro.classList.add("hidden");
+                            intro.setAttribute("aria-hidden", "true");
+                        }, 500);
+                    }, 1000);
+                })();
+            </script>
         </main>
     </body>
 </html>

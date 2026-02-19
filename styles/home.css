@@ -55,7 +55,7 @@ html {
     display: grid;
     place-items: center;
     opacity: 1;
-    transition: opacity 500ms ease, pointer-events 500ms ease;
+    transition: opacity 500ms linear, pointer-events 500ms linear;
 }
 
 .intro.hidden {
@@ -270,7 +270,7 @@ html {
     box-sizing: border-box;
     border-style: solid;
     border-color: rgb(255, 255, 255);
-    border-radius: 25px;
+    border-radius: 5px;
     border-width: 2px;
 }
 
