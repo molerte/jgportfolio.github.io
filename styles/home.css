@@ -132,7 +132,7 @@ html {
     margin: 0;
     width: auto;
     max-width: 100vw;
-    animation: flicker 0.024s linear infinite;
+    animation: flicker 0.012s linear infinite;
 }
 
 .firstDiv h1 i {

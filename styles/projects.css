@@ -57,6 +57,12 @@ html {
   100% { transform: rotate(0deg); }
 }
 
+@keyframes flicker {
+    50% {
+        opacity: 0.6;
+    }
+}
+
 .intro {
     position: fixed;
     inset: 0;
@@ -117,15 +123,16 @@ html {
     padding-top: 0.4em;
     font-weight: 800;
     word-break: break-word;
+    animation: flicker 0.018s linear infinite;
     margin: 0;
      text-shadow:
-        3px 3px 0px rgba(255, 180, 76, 0.151),
+        -3px -3px 0px rgba(255, 180, 76, 0.151),
         6px 6px 0px rgba(240, 51, 155, 0.219),
         9px 9px 0px rgba(248, 45, 221, 0.281),
-        12px 12px 0px rgba(255, 207, 50, 0.418),
+        -12px -12px 0px rgba(255, 207, 50, 0.418),
         15px 15px 0px rgba(247, 34, 247, 0.507),
         18px 18px 0px rgba(36, 29, 240, 0.603),
-        21px 21px 0px rgba(39, 235, 72, 0.781),
+        -21px -21px 0px rgba(39, 235, 72, 0.781),
         24px 24px 0px rgba(142, 24, 197, 0.781);
     transition: text-shadow 0.3s ease;
 }
@@ -260,6 +267,39 @@ html {
     filter: drop-shadow(0 0 10px rgba(75, 243, 83, 0.471));
     transition: 0.5s;
     transform: scale(1.03);
+}
+
+.thanksMessage {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+    font-family: "Oranienbaum", sans-serif;
+    font-size: 1.2em;
+    margin: 3em auto 0 auto;
+    gap: 9px;
+}
+
+.thanksMessage img {
+    max-width: 4vw;
+    display: block;
+    height: auto;
+    margin: 0;
+    animation: flicker 0.03s linear infinite;
+    filter: sepia(1);
+    transition: box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.thanksMessage img:hover {
+    box-shadow:
+        -3px -3px 0px rgba(255, 9, 9, 0.151),
+        6px 6px 0px rgba(255, 213, 24, 0.219),
+        -9px -9px 0px rgba(30, 255, 60, 0.281),
+        12px 12px 0px rgba(50, 70, 255, 0.418),
+        -15px -15px 0px rgba(247, 34, 34, 0.507);
+    filter: none;
 }
 
 .thirdDiv {
@@ -917,6 +957,11 @@ html {
     .fifthDiv {
         padding: 12vw 5vw 23vw 5vw;
         min-height: 40em;
+    }
+
+    .thanksMessage img {
+        max-width: 10vw;
+        filter: none;
     }
 
     .calenvisorColumn,

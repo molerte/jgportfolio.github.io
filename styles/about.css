@@ -53,6 +53,12 @@ html {
   100% { transform: rotate(0deg); }
 }
 
+@keyframes flicker {
+    50% {
+        opacity: 0.6;
+    }
+}
+
 .intro {
     position: fixed;
     inset: 0;
@@ -114,14 +120,15 @@ html {
     padding-top: 0.4em;
     font-weight: 800;
     word-break: break-word;
+    animation: flicker 0.018s linear infinite;
     text-shadow:
-        3px 3px 0px rgba(255, 157, 76, 0.151),
+        -3px -3px 0px rgba(255, 157, 76, 0.151),
         6px 6px 0px rgba(240, 51, 155, 0.219),
         9px 9px 0px rgba(248, 45, 221, 0.281),
-        12px 12px 0px rgba(255, 207, 50, 0.418),
+        -12px -12px 0px rgba(255, 207, 50, 0.418),
         15px 15px 0px rgba(247, 66, 34, 0.507),
         18px 18px 0px rgba(240, 124, 29, 0.603),
-        21px 21px 0px rgba(235, 157, 39, 0.781),
+        -21px -21px 0px rgba(235, 157, 39, 0.781),
         24px 24px 0px rgba(142, 24, 197, 0.781);
     transition: text-shadow 0.3s ease;
 }
@@ -166,7 +173,7 @@ html {
 }
 
 .whoAmI h1 {
-    color: rgb(204, 204, 204);
+    color: rgb(255, 255, 255);
     font-family: "Pixelify Sans", sans-serif;
     font-weight: 600;
     font-size: 4em;
@@ -217,9 +224,9 @@ html {
     animation: transitionIn 1.5s;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.13));
     text-shadow:
-        3px 3px 0px rgba(255, 187, 124, 0.59),
-        6px 6px 0px rgba(255, 170, 59, 0.59),
-        9px 9px 0px rgba(255, 139, 6, 0.59);
+        3px 3px 0px rgba(124, 255, 130, 0.59),
+        6px 6px 0px rgba(59, 255, 101, 0.59),
+        9px 9px 0px rgba(14, 255, 6, 0.59);
 }
 
 .motive p {
