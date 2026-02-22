@@ -4,8 +4,14 @@
 
 html {
     background-color: #181818;
-    background-image: url("../images/homebannerDARK.jpg");
+    background-image: url("../images/homebannerSTARS.jpg");
+    background-position: center;
+    overflow: scroll;
     overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
 }
 
 
@@ -103,7 +109,7 @@ html {
     background: -webkit-linear-gradient(141deg, rgb(255, 255, 255) 0%, rgb(197, 197, 197) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.322));
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.384));
     font-size: 10vw; 
     text-align: center;
     font-family: "Doto", sans-serif;
@@ -190,7 +196,7 @@ html {
 
 .lmsRow .lmsGameplay img {
     height: 30em;
-    border-radius: 5px;
+    border-radius: 1px;
     /*border: 1px solid #ff5656;*/
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.144));
     margin: 0;
@@ -227,7 +233,7 @@ html {
 
 .lmsRowBottom .lmsGameplayWinter img {
     height: 30em;
-    border-radius: 5px;
+    border-radius: 1px;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.144));
     margin: 0;
     /*border: 1px solid #69ff56;*/
@@ -261,6 +267,7 @@ html {
     padding: 4vw 2vw 4vw 2vw;
     min-height: 30em;
     box-sizing: border-box;
+    background-image: url("../images/homebannerDARK.jpg");
     filter: brightness(0.2);
     transition: 0.5s;
 }
@@ -566,16 +573,21 @@ html {
     padding: 2vw 2vw 4vw 2vw;
     min-height: 30em;
     box-sizing: border-box;
+    background-image: url("../images/homebannerDARK.jpg");
 }
 
 .fifthDiv h1 {
-    color: rgb(248, 58, 58);
+    color: rgb(255, 255, 255);
     padding-top: 0.2em;
     font-family: "Pixelify Sans", sans-serif;
-    filter: drop-shadow(0 0 5px rgba(248, 58, 58, 0.449));
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.449));
     font-weight: 600;
     font-size: 7vw;
     text-align: center;
+    text-shadow:
+        3px 3px 0px rgba(252, 71, 71, 0.59),
+        6px 6px 0px rgba(255, 194, 113, 0.59),
+        9px 9px 0px rgba(163, 255, 42, 0.59);
 }
 
 .projectRow {
@@ -634,6 +646,7 @@ html {
 
 .sixthDiv {
     height: 7.5em;
+    /*border-top: #ffffff 1px solid;*/
 }
 
 .copyright {
