@@ -151,6 +151,7 @@ html {
     font-family: Mermaid, Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     transition: 0.5s;
+    /*border-top: 1px solid #757575;*/
 }
 
 .secondDiv:hover {
@@ -613,6 +614,7 @@ html {
     padding: 2vw 2vw 4vw 2vw;
     min-height: 30em;
     box-sizing: border-box;
+    /*border-bottom: 1px solid #757575;*/
     background-image: url("../images/homebannerDARK.jpg");
 }
 
@@ -620,12 +622,12 @@ html {
     color: rgb(255, 255, 255);
     padding-top: 0.2em;
     font-family: "Pixelify Sans", sans-serif;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.449));
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.507));
     font-weight: 600;
     font-size: 7vw;
     text-align: center;
     text-shadow:
-        3px 3px 0px rgba(252, 71, 71, 0.59),
+        3px 3px 0px rgba(255, 172, 172, 0.59),
         6px 6px 0px rgba(255, 194, 113, 0.59),
         9px 9px 0px rgba(163, 255, 42, 0.59);
 }
@@ -686,7 +688,6 @@ html {
 
 .sixthDiv {
     height: 7.5em;
-    /*border-top: #ffffff 1px solid;*/
 }
 
 .copyright {

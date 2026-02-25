@@ -214,12 +214,13 @@ html {
     margin: 0 auto;
     /*filter: drop-shadow(0 0 5px rgba(252, 11, 11, 0.795));*/
     transition: 0.5s;
-    border-radius: 100px
+    border-radius: 100px;
+    border:  1px #a71616 solid;
 }
 
 .optionColumn img:hover {
-    filter: drop-shadow(0 0 15px rgba(255, 56, 56, 0.473));
-    transform: scale(1.07);
+    filter: drop-shadow(0 0 15px rgba(255, 56, 56, 0.288));
+    transform: scale(1.02);
     transition: 0.5s;
 }
 
@@ -339,6 +340,10 @@ html {
     font-weight: 600;
     text-align: center;
     padding-top: 2em;
+}
+
+.fifthDiv p1 {
+    color: #505050;
 }
 
 .socials {
