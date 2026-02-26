@@ -7,7 +7,7 @@ html {
     background-image: url("../images/homebanner.jpg");
     overflow: scroll;
     overflow-x: hidden;
-    animation: transitionIn 0.77s;
+    /*animation: transitionIn 0.77s;*/
 }
 ::-webkit-scrollbar {
     width: 0;
@@ -31,7 +31,7 @@ html {
     }
 }
 
-@keyframes fade-down {
+/*@keyframes fade-down {
     0% {
         opacity: 0;
         transform: translateY(-30px) scale(0.9);
@@ -41,7 +41,7 @@ html {
         opacity: 1;
         transform: translateY(0px) scale(1); 
     }
-}
+}*/
 
 @keyframes shake {
   0% { transform: rotate(0deg); }
