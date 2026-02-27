@@ -171,8 +171,8 @@ html {
 
 .lmsLogo img:hover {
     transition: 0.5s;
-    transform: scale(1.03);
-    filter: drop-shadow(0 0 15px rgba(255, 65, 17, 0.384));
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 6px rgba(255, 65, 17, 0.23));
 }
 
 .lmsRow {
@@ -196,11 +196,13 @@ html {
     max-width: 32em;
 }
 
-.lmsRow p:hover {
+/*Too much hovering effects = bad*/
+
+/*.lmsRow p:hover {
     background-color: #e2e2e2;
     color: black;
     filter: none;
-}
+}*/ 
 
 .lmsRow .lmsGameplay img {
     height: 30em;
@@ -233,11 +235,11 @@ html {
     max-width: 32em;
 }
 
-.lmsRowBottom p:hover {
+/*.lmsRowBottom p:hover {
     background-color: #e2e2e2;
     color: black;
     filter: none;
-}
+}*/
 
 .lmsRowBottom .lmsGameplayWinter img {
     height: 30em;
@@ -265,9 +267,9 @@ html {
 }
 
 .playOn img:hover {
-    filter: drop-shadow(0 0 10px rgba(75, 243, 83, 0.471));
+    filter: drop-shadow(0 0 6px rgba(75, 243, 83, 0.239));
     transition: 0.5s;
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
 
 .thanksMessage {
@@ -327,8 +329,8 @@ html {
 }
 
 .calenvisorLogo img:hover {
-    filter: drop-shadow(0 0 20px rgba(58, 135, 236, 0.432));
-    transform: scale(1.03);
+    filter: drop-shadow(0 0 8px rgba(58, 135, 236, 0.255));
+    transform: scale(1.01);
     transition: 0.5s;
 }
 
@@ -436,7 +438,7 @@ html {
 }
 
 .video iframe:hover {
-    filter: drop-shadow(0 0 15px rgb(117, 94, 250));
+    filter: drop-shadow(0 0 6px rgba(117, 94, 250, 0.433));
     transition: 0.5s;
 }
 
@@ -492,11 +494,12 @@ html {
     flex-shrink: 0;
 }
 
-.ED h1:hover {
+/*Hovering effect on a non-interactive element = thumbs down*/
+/*.ED h1:hover {
     background-color: #e2e2e2;
     color: black;
     filter: none;
-}
+}*/
 
 .ED p {
     color: rgb(255, 255, 255);
@@ -510,15 +513,15 @@ html {
     flex: 1 1 0;
 }
 
-.ED p:hover {
+/*.ED p:hover {
     background-color: #e2e2e2;
     color: black;
     filter: none;
-}
+}*/
 
 .dbmsLogo img {
     transition: 0.5s;
-    max-width: 100%;
+    max-width: 100%s;
     height: auto;
     display: block;
     margin: 1em auto;
@@ -526,8 +529,8 @@ html {
 
 .dbmsLogo img:hover {
     transition: 0.5s;
-    transform: scale(1.03);
-    filter: drop-shadow(0 0 15px rgba(228, 228, 228, 0.349));
+    transform: scale(1.01);
+    filter: drop-shadow(0 0 7px rgba(228, 228, 228, 0.349));
 }
 
 .slideshow-container img {
@@ -627,9 +630,9 @@ html {
     font-size: 7vw;
     text-align: center;
     text-shadow:
-        3px 3px 0px rgba(255, 172, 172, 0.59),
+        3px 3px 0px rgba(255, 208, 172, 0.59),
         6px 6px 0px rgba(255, 194, 113, 0.59),
-        9px 9px 0px rgba(163, 255, 42, 0.59);
+        9px 9px 0px rgba(255, 220, 42, 0.59);
 }
 
 .projectRow {

@@ -224,9 +224,9 @@ html {
     animation: transitionIn 1.5s;
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.13));
     text-shadow:
-        3px 3px 0px rgba(124, 255, 130, 0.59),
-        6px 6px 0px rgba(59, 255, 101, 0.59),
-        9px 9px 0px rgba(14, 255, 6, 0.59);
+        3px 3px 0px rgba(255, 124, 124, 0.59),
+        6px 6px 0px rgba(255, 59, 59, 0.59),
+        9px 9px 0px rgba(255, 6, 6, 0.59);
 }
 
 .motive p {

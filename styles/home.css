@@ -132,7 +132,7 @@ html {
     margin: 0;
     width: auto;
     max-width: 100vw;
-    animation: flicker 0.012s linear infinite;
+    animation: flicker 0.010s linear infinite;
 }
 
 .firstDiv h1 i {
@@ -219,7 +219,7 @@ html {
 }
 
 .optionColumn img:hover {
-    filter: drop-shadow(0 0 15px rgba(255, 56, 56, 0.288));
+    filter: drop-shadow(0 0 8px rgba(255, 56, 56, 0.288));
     transform: scale(1.02);
     transition: 0.5s;
 }

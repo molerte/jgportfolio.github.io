@@ -31,7 +31,6 @@
                     <li><a href="#" class="home">HOME</a></li>
                     <li><a href="About/About.html">ABOUT ME</a></li>
                     <li><a href="Projects/Projects.html">PROJECTS</a></li>   
-                    <li><a href="Whatever/whatever.html">NOISE</a></li>
                 </ul>
             </nav>
         <main>
@@ -59,12 +58,17 @@
                         <div class="row">
                             <div class="optionColumn">
                                 <a href="About/About.html"><img src="images/Aboute.jpg" class="row-img"></a>
-                                <figcaption>About Me</figcaption>
+                                <figcaption>About</figcaption>
                             </div>
 
                             <div class="optionColumn">
                                 <a href="Projects/Projects.html"><img src="images/Projects.jpg" class="row-img"></a>
-                                <figcaption>My Projects</figcaption>
+                                <figcaption>Projects</figcaption>
+                            </div>
+
+                            <div class="optionColumn">
+                                <a href="whatever/whatever.html"><img src="images/noiselogo.jpg" class="row-img"></a>
+                                <figcaption>Gallery</figcaption>
                             </div>
                         </div>
                     </div>
@@ -143,7 +147,7 @@
                         observer.unobserve(entry.target);
                     }
                     })
-                }, { threshold: 0.15 });
+                }, { threshold: 0.45 });
 
                 reveals.forEach(reveal => {
                     observer.observe(reveal);
