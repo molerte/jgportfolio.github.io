@@ -53,32 +53,11 @@ html {
     animation: intro-flicker 0.6s linear;
 }
 
-.reveal {
-    opacity: 0;
-    transform: translateY(5px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 .fifthDiv {
     padding: 2vw 2vw 4vw 2vw;
     min-height: 30em;
     box-sizing: border-box;
     /*border-bottom: 1px solid #757575;*/
-}
-
-.exit img {
-    width: 20%;
-    max-width: 200px; 
-    height: auto;
-    display: block;
-    margin: 0 auto 1em auto;
-    filter: invert(1);
-    animation: flicker 0.005s linear infinite;
 }
 
 .exit-footer img {
@@ -94,44 +73,23 @@ html {
 .side {
     color: rgb(0, 0, 0);
     padding-top: 0.8em;
-    padding-bottom: 0.8em;
+    padding-bottom: 0.5em;
     font-family: "Jersey 15", sans-serif;
     font-weight: 200;
     font-size: 7vw;
     text-align: center;
 }
 
-.side-end {
-    color: rgb(0, 0, 0);
-    padding-top: 0.8em;
-    padding-bottom: 0.2em;
-    font-family: "Jersey 15", sans-serif;
-    font-weight: 200;
-    font-size: 7vw;
-    text-align: center;
-}
-
-.upsidedown {
-    transform: rotate(180deg);
-    color: rgb(0, 0, 0);
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    font-family: "Jersey 15", sans-serif;
-    font-weight: 200;
-    font-size: 7vw;
-    text-align: center;
-}
-
-.credits {
+.about-text {
     font-family: "Inter Tight", sans-serif;
     font-size: 1.2em;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     max-width: 30em;      
     width: 100%;
 }
 
-.projectRow {
+.about-row {
     display: flex;
     flex-direction: column;    
     align-items: center;       
@@ -141,16 +99,8 @@ html {
     box-sizing: border-box;
 }
 
-.projectRow img {
-    width: 100%;
-    max-width: 600px; 
-    height: auto;
-    display: block;
-    margin: 0 auto 1em auto;
-    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.301));
-}
 
-#nav_menu ul li a.gallery {
+#nav_menu ul li a.about {
     color: rgb(250, 21, 21);
     transition: 1s;
 }
@@ -276,29 +226,15 @@ html {
     transform: translateY(-0.29em) rotate(-45deg);
 }
 
-
-
-
-
 @media (max-width: 1024px) {
 
-    .intro img {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
+    .fifthDiv {
+        margin: 8em auto;
+        text-align: center;
     }
-    
-    .exit img {
-        width: 40%;
-        max-width: 200px; 
-        height: auto;
-        display: block;
-        margin: 1em auto 1em auto;
+
+    .about-text {
+        font-size: 4vw;
     }
 
     .exit-footer img {
@@ -309,7 +245,7 @@ html {
         margin: 1em auto 1em auto;
     }
 
-    .upsidedown, .side, .side-end {
+    .side {
         font-size: 12vw;
     }
 
