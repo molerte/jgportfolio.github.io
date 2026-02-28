@@ -82,8 +82,8 @@ html {
 
 .about-text {
     font-family: "Inter Tight", sans-serif;
-    font-size: 1.2em;
-    font-weight: 600;
+    font-size: 1.3em;
+    font-weight: 500;
     text-align: left;
     max-width: 30em;      
     width: 100%;
@@ -105,12 +105,12 @@ html {
     transition: 1s;
 }
 
-#nav_menu {
-    text-align: center;
+#nav_menu ul li a.about:hover {
+    color: rgb(250, 21, 21);
 }
 
-#nav_menu ul li a.projects:hover {
-    color: #ffd29f;
+#nav_menu {
+    text-align: center;
 }
 
 #nav_menu ul li {
@@ -129,7 +129,7 @@ html {
     height: 100vh;
     opacity: 0;
     transform: translateX(100%);
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.7s ease, opacity 0.7s ease;
     pointer-events: none;
 
     justify-content: center;
@@ -154,7 +154,7 @@ html {
 }
 
 #nav_menu ul li a:hover, ul li a:focus {
-    color: rgb(231, 43, 43);
+    color: rgb(204, 29, 29);
     transition: 0.5s;
 }
 
@@ -177,7 +177,6 @@ html {
     font-weight: 500;
     transition: 1s
 }
-
 
 #mobile-nav-bar img {
     width: 7.5em;
@@ -234,7 +233,8 @@ html {
     }
 
     .about-text {
-        font-size: 4vw;
+        font-size: 4.3vw;
+        width: 90%;
     }
 
     .exit-footer img {
@@ -249,10 +249,17 @@ html {
         font-size: 12vw;
     }
 
+    .exit-footer img {
+        margin-top: 4em;
+    }
+
     #nav_menu ul {
         padding-top: -1.8em;
     }
 
+    #nav_menu ul li a {
+        font-size: 6vw;
+    }
 }
 
 
