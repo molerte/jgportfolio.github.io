@@ -321,6 +321,10 @@ html {
         font-size: 6vw;
     }
 
+    #mobile-nav-toggle .bar {
+        background: rgb(255, 255, 255);
+        filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.799));
+    }
 }
 
 
