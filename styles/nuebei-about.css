@@ -54,7 +54,7 @@ html {
 }
 
 .fifthDiv {
-    padding: 2vw 2vw 4vw 2vw;
+    padding: 1vw 1vw 3vw 1vw;
     min-height: 30em;
     box-sizing: border-box;
     /*border-bottom: 1px solid #757575;*/
@@ -65,7 +65,7 @@ html {
     max-width: 200px;
     height: auto;
     display: block;
-    margin: 5em auto 0 auto;
+    margin: 1.5rem auto 3rem auto;
     filter: invert(1);
     animation: flicker 0.005s linear infinite;
 }
@@ -97,6 +97,34 @@ html {
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
+}
+
+.about-image-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.img-column {
+    margin: 1.6rem 0;
+    gap: 0.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.img-column img {
+    width: 100%;
+    max-width: 8.5rem;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    filter: grayscale(0.6);
 }
 
 
@@ -228,7 +256,7 @@ html {
 @media (max-width: 1024px) {
 
     .fifthDiv {
-        margin: 8em auto;
+        margin: 2em auto;
         text-align: center;
     }
 
@@ -245,8 +273,13 @@ html {
         margin: 1em auto 1em auto;
     }
 
+    .about-image-row img {
+        width: 100%;
+        max-width: 6.5rem;
+    }
+
     .side {
-        font-size: 12vw;
+        font-size: 18vw;
     }
 
     .exit-footer img {
