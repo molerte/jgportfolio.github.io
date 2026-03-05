@@ -25,6 +25,15 @@ html {
     }
 }
 
+@keyframes menu-blur {
+    0% {
+        filter: blur(7px);
+    }
+    20% {
+        filter: none;
+    }
+}
+
 
 .intro {
     position: fixed;
@@ -201,6 +210,7 @@ html {
     opacity: 1;
     transform: translateX(0);
     pointer-events: auto;
+    animation: menu-blur 3s linear;
 }
 
 #nav_menu ul li a:hover, ul li a:focus {
