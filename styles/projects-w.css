@@ -12,7 +12,6 @@ html {
     background: transparent;
 }
 
-
 @keyframes flicker {
     50% {
         opacity: 0.6;
@@ -34,7 +33,6 @@ html {
     }
 }
 
-
 .intro {
     position: fixed;
     inset: 0;
@@ -43,7 +41,7 @@ html {
     display: grid;
     place-items: center;
     opacity: 1;
-    transition: opacity 500ms linear, pointer-events 500ms linear;
+    transition: opacity 500ms linear, pointer-event 500ms linear;
 }
 
 .intro.hidden {
@@ -66,21 +64,9 @@ html {
     padding: 1vw 1vw 3vw 1vw;
     min-height: 30em;
     box-sizing: border-box;
-    /*border-bottom: 1px solid #757575;*/
-}
-
-.exit-footer img {
-    width: 20%;
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: 0.5rem auto 5rem auto;
-    filter: invert(1);
-    animation: flicker 0.005s linear infinite;
 }
 
 .side {
-    color: rgb(0, 0, 0);
     padding-top: 0.8em;
     padding-bottom: 0.5em;
     font-family: "Jersey 15", sans-serif;
@@ -89,60 +75,125 @@ html {
     text-align: center;
 }
 
-.about-text {
-    font-family: "Inter Tight", sans-serif;
-    font-size: 1.3em;
-    font-weight: 500;
-    text-align: left;
-    max-width: 30em;      
-    width: 100%;
-}
-
-.about-row {
+.row {
     display: flex;
-    flex-direction: column;    
-    align-items: center;       
-    gap: 0.1vw;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.about-image-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 0.2vw;
-    width: 100%;
+    gap: 2vw;
+    width: 80%;
+    margin: 0 auto 1.5em auto;
     box-sizing: border-box;
 }
 
-.img-column {
-    margin: 1.6rem 0;
-    gap: 0.2vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
+.row-img {
+    width: 4.5em;
+    height: 4.5em;
+    display: block;
+    margin: 0 auto 0 0;
+    object-fit: cover;
 }
 
-.img-column img {
+.row figcaption {
+    margin-top: 0.4em;
     width: 100%;
-    max-width: 8.5rem;
+    font-family: "Inter Tight", sans-serif;
+    text-align: left;
+    color: black;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.row figcaption p {
+    font-size: 0.58em;
+    font-weight: 400;
+    margin-top: 0.5em;
+    color: rgb(80, 80, 80);
+}
+
+.row figcaption button {
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 0.1em 0.4em;
+    background: none;
+    transition: 0.5s;
+}
+
+.row figcaption button:hover {
+    color: rgb(246, 32, 32);
+    border: 1px solid rgb(184, 58, 58);
+    transition: 0.5s
+}
+
+
+.project-column {
+    width: 20%;
+    min-width: 120px;
+    max-width: 300px;
+    margin: 1.5em 0 1.5em 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-items: start;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.project-column > a {
+    grid-area: 1 / 1;
+    width: 100%;
+}
+
+.project-column img {
+    width: 100%;
+    max-width: 20.5rem;
     height: auto;
     display: block;
-    margin: 1rem auto;
-    filter: sepia(0.2);
+    margin: 0 auto;
+    filter: grayscale(0%) sepia(0%) hue-rotate(0deg)
+            drop-shadow(0 0 8px rgba(0, 0, 0, 0.301));
+    transition: filter 0.7s ease;
 }
 
+.project-column:hover img {
+    filter: grayscale(0.1%) sepia(40%) hue-rotate(320deg);
+}
 
-#nav_menu ul li a.about {
+/*Years image tagging*/
+.year {
+    grid-area: 1 / 1;
+    align-self: start;
+    justify-self: end;
+    transform: translate(18%, -10%) rotate(25deg);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.year img {
+    width: 100%;
+    max-width: clamp(5.5rem, 12vw, 7.5rem);
+}
+
+@media (max-width: 900px) {
+    .year {
+        transform: translate(8%, -2%) rotate(25deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .year {
+        transform: translate(0, -2%) rotate(25deg);
+    }
+}
+/*End of years image tagging*/
+
+#nav_menu ul li a.projects {
     color: rgb(250, 21, 21);
     transition: 1s;
 }
 
-#nav_menu ul li a.about:hover {
+#nav_menu ul li a.projects:hover {
     color: rgb(250, 21, 21);
 }
 
@@ -195,12 +246,6 @@ html {
     transition: 0.5s;
 }
 
-.logo {
-    font-family: "Jersey 15", sans-serif;
-    font-size: clamp(4.4em, 5vw, 3.5em);
-    padding: 0.3em 0;
-}
-
 #nav_menu ul li a {
     width: 100%;
     text-align: center;
@@ -213,16 +258,6 @@ html {
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     transition: 1s
-}
-
-#mobile-nav-bar img {
-    width: 7.5em;
-    padding: 13px;
-    display: block;
-    position: absolute;
-    position: fixed;
-    z-index: 5;
-    animation: fade-down 1s;
 }
 
 #mobile-nav-toggle {
@@ -269,33 +304,39 @@ html {
         text-align: center;
     }
 
-    .about-text {
-        font-size: 4.3vw;
-        width: 90%;
-    }
-
-    .exit-footer img {
-        width: 40%;
-        max-width: 200px; 
-        height: auto;
-        display: block;
-        margin: 1em auto 1em auto;
-    }
-
-    .about-image-row img {
-        width: 100%;
-        max-width: 6.5rem;
-    }
-
-    .side {
+     .side {
         font-size: 18vw;
     }
 
-    .exit-footer img {
-        margin-top: 4em;
+    .row img {
+        filter: none;
+        width: 100%;
     }
 
-    #nav_menu ul {
+    .row figcaption {
+        text-align: center;
+        font-size: 4.2vw;
+        margin-top: 0.35em;
+    }
+
+    .row figcaption p {
+        font-size: 3vw;
+    }   
+
+    .row figcaption button {
+        word-break: break-word;
+    }
+
+    .year {
+        transform: translate(13%, -5%) rotate(25deg);
+    }
+
+    .year img {
+        width: 100%;
+        max-width: clamp(4.5rem, 11vw, 7.5rem);
+    }
+
+     #nav_menu ul {
         padding-top: -1.8em;
     }
 
@@ -307,6 +348,5 @@ html {
         background: rgb(255, 255, 255);
         filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.799));
     }
+
 }
-
-
