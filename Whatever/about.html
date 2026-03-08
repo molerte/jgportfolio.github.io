@@ -28,6 +28,7 @@
                 <ul>
                     <!--<div class="logo">nuebei</div>-->
                     <li><a href="../Whatever/whatever.html" class="gallery">Gallery</a></li>
+                    <li><a href="../Whatever/projects.html">Projects</a></li>
                     <li><a href="#" class="about">About</a></li>
                     <li><a href="../index.html"><i class="fa fa-long-arrow-left"></i> Return</a></li>   
                 </ul>
@@ -49,12 +50,21 @@
                                 My work often draws inspiration from everyday objects and scenes 
                                 that I visualize.
                             </p>
+                            <br>
+                            <p>Over time, I have honed my skills in various editing software, 
+                                allowing me to create more complex and visually striking pieces. 
+                                My portfolio includes a range of projects, from surreal photo 
+                                manipulations to dynamic video edits. Each piece is a reflection 
+                                of my unique perspective and creative process.
+                            </p>
+                            <br>
+                            <p>Through my work, I aim to evoke emotions and provoke thought,
+                                inviting viewers to see the world through my eyes. I am constantly
+                                exploring new techniques and styles, pushing the boundaries of my creativity. My journey is ongoing, and I am excited to see where my passion for editing and production will take me next.
+                            </p>
+                        
 
                             <div class="about-image-row">
-
-                                <div class="img-column">
-                                    <img src="../images/image3.png" class="row-img">
-                                </div>
 
                                 <div class="img-column">
                                     <img src="../images/image4.png" class="row-img">
@@ -62,6 +72,10 @@
 
                                 <div class="img-column">
                                     <img src="../images/image1.png" class="row-img">
+                                </div>
+
+                                <div class="img-column">
+                                    <img src="../images/image3.png" class="row-img">
                                 </div>
                             </div>
                         </div>
@@ -115,8 +129,9 @@
 
                 navLinks.forEach(link => {
                     link.addEventListener("click", () => {
-                        navMenu.classList.remove("open");
-                        navToggle.classList.remove("open");
+                        /*Not removing - gif shows when going to a different page*/
+                        /*navMenu.classList.remove("open");
+                        navToggle.classList.remove("open");*/
                     })
                 })
 

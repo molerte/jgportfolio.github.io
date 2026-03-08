@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale = 1.0,maximum-scale = 1.0">
+        <title>Projects | molerte.</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!--Insert fonts here-->
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Belleza&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Doto:wght@100..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Jersey+15&family=Libre+Barcode+39&family=Oranienbaum&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Unbounded:wght@200..900&family=Young+Serif&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/projects-w.css">
+        <link rel="icon" href= "../images/logo_bo.png">
+    </head>
+
+    <body>
+        <div id="mobile-nav-bar">
+            <button id="mobile-nav-toggle" aria-label="Open navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="../Whatever/whatever.html" class="gallery">Gallery</a></li>
+                    <li><a href='#' class="projects">Projects</a></li>
+                    <li><a href="../Whatever/about.html">About</a></li>
+                    <li><a href="../index.html"><i class="fa fa-long-arrow-left"></i> Return</a></li>   
+                </ul>
+            </nav>
+        <main>
+
+        <section>
+            <div class ="fifthDiv">
+                <div class ="side">molerte.</div>
+                    <div class="row">
+
+                        <div class="project-column">
+                            <a href="../Projects/Projects.html"><img src="../images/molerteTheHighlight.jpg" class="row-img"></a>
+                            <div class="year"><img src="../images/2026.png" class="row-img"></div>
+                            <figcaption>Holu
+                                <p>This application simplifies gym routines by eliminating unnecessary features like calorie counters and social feeds.</p>
+                            </figcaption>
+                        </div>
+
+                        <div class="project-column">
+                            <a href="../Projects/Projects.html"><img src="../images/image4.png" class="row-img"></a>
+                            <div class="year"><img src="../images/2026.png" class="row-img"></div>
+                            <figcaption>MyBeaufortView
+                                <p>This application simplifies gym routines by eliminating unnecessary features like calorie counters and social feeds.</p>
+                            </figcaption>
+                        </div>
+
+                        <div class="project-column">
+                            <a href="../Projects/Projects.html"><img src="../images/WebsiteMe.jpg" class="row-img"></a>
+                            <div class="year"><img src="../images/2026.png" class="row-img"></div>
+                            <figcaption>Personal Website<br><button class="fa fa-play"></button>
+                                <p>Designed and developed a personal website to showcase projects, skills, and experiences.</p>
+                            </figcaption>
+                        </div>
+
+                        <div class="project-column">
+                            <a href="../About/About.html"><img src="../images/Calenvisor.jpg" class="row-img"></a>
+                            <div class="year"><img src="../images/2025.png" class="row-img"></div>
+                            <figcaption>Calenvisor
+                                <p>This program allows users to configure information about 
+                                   students, advisors, meetings, and availability. Users can add, 
+                                   delete, and edit information in the database.</p>
+                            </figcaption>
+                        </div>
+
+                        <div class="project-column">
+                            <a href="../Whatever/whatever.html"><img src="../images/AboutMe.jpg" class="row-img"></a>
+                            <div class="year"><img src="../images/2024.png" class="row-img"></div>
+                            <figcaption>Managing USCB Student Database
+                                <p>The purpose is to find results using queries from our database. 
+                                    To do this, we must first build our tables using an Entity-Relationship Diagram (ERD) 
+                                    before implementing the information in our database.</p>
+                            </figcaption>
+                        </div>
+
+                        <div class="project-column">
+                            <a href="../About/About.html"><img src="../images/albumcover22.jpg" class="row-img"></a>
+                            <div class="year"><img src="../images/2023.png" class="row-img"></div>
+                            <figcaption>Last Man Standing<br>
+                                <a href="https://www.greenfoot.org/scenarios/32516" target="Last-Man-Standing"><button class="fa fa-play"></button></a>
+                                <p>Designed and developed "Last Man Standing," a top-down 2D game inspired by Futurism, using Greenfoot and Java.</p>
+                            </figcaption>
+                        </div>
+
+                        <div class="project-column">
+                            <a href="../Projects/Projects.html"><img src="../images/YRBS.jpg" class="row-img"></a>
+                            <div class="year"><img src="../images/2022.png" class="row-img"></div>
+                            <figcaption>2019 YRBS Data Analysis 
+                                <p>Analyzing the connection between prescription drug abuse and illicit drug use. Applied data analysis and visualization techniques to interpret trends and draw meaningful conclusions.</p>
+                            </figcaption>
+                        </div>
+
+                        
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            <div id="intro" class="intro hidden" aria-hidden="true">
+                <div class="intro-text">molerte.</div>
+            </div>
+        </section>
+
+        <script>
+            (function () {
+                    const intro = document.getElementById("intro");
+                    if (!intro) return;
+
+                    intro.classList.remove("hidden");
+                    intro.classList.remove("fade-out");
+                    intro.setAttribute("aria-hidden", "false");
+
+                    setTimeout(() => {
+                        intro.classList.add("fade-out");
+                        setTimeout(() => {
+                            intro.classList.add("hidden");
+                            intro.setAttribute("aria-hidden", "true");
+                        }, 500);
+                    }, 1000);
+                })();
+
+                /* Fluidity of the hamburger menu (desktop and mobile) */
+                document.getElementById("mobile-nav-toggle").onclick = function() {
+                    this.classList.toggle("open");
+                    document.querySelector("#nav_menu ul").classList.toggle("open");
+                }
+
+                const navToggle = document.getElementById("mobile-nav-toggle");
+                const navMenu = document.querySelector("#nav_menu ul");
+                const navLinks = document.querySelectorAll("#nav_menu ul li a");
+
+                navLinks.forEach(link => {
+                    link.addEventListener("click", () => {
+                        /*Not removing - gif shows when going to a different page*/
+                        /*navMenu.classList.remove("open");
+                        navToggle.classList.remove("open");*/
+                    })
+                })
+
+                document.addEventListener("click", function(event) {
+                    const isMenuOpen = navMenu.classList.contains("open");
+                    if (
+                        isMenuOpen && !navMenu.contains(event.target) && 
+                        event.target !== navToggle && !navToggle.contains(event.target)
+                    ) { 
+                        navMenu.classList.remove("open");
+                        navToggle.classList.remove("open");
+                    }
+                })
+        </script>
+        </main>
+    </body>
+</html>
