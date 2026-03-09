@@ -79,22 +79,22 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2vw;
+    gap: 2.5vw;
     width: 80%;
     margin: 0 auto 1.5em auto;
     box-sizing: border-box;
 }
 
 .row-img {
-    width: 4.5em;
-    height: 4.5em;
+    width: 5.5em;
+    height: 5.5em;
     display: block;
     margin: 0 auto 0 0;
     object-fit: cover;
 }
 
 .row figcaption {
-    margin-top: 0.4em;
+    margin-top: 0.2em;
     width: 100%;
     font-family: "Inter Tight", sans-serif;
     text-align: left;
@@ -111,10 +111,10 @@ html {
 }
 
 .row figcaption button {
-    font-size: 0.8em;
+    font-size: 0.6em;
     color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
+    border-radius: 2px;
     padding: 0.1em 0.4em;
     background: none;
     transition: 0.5s;
@@ -325,6 +325,7 @@ html {
 
     .row figcaption button {
         word-break: break-word;
+        font-size: 0.7em;
     }
 
     .year {
