@@ -81,7 +81,7 @@ html {
     justify-content: center;
     gap: 2.5vw;
     width: 80%;
-    margin: 0 auto 1.5em auto;
+    margin: 0 auto 2.5em auto;
     box-sizing: border-box;
 }
 
@@ -90,7 +90,6 @@ html {
     height: 5.5em;
     display: block;
     margin: 0 auto 0 0;
-    object-fit: cover;
 }
 
 .row figcaption {

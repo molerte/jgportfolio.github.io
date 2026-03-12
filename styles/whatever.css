@@ -34,7 +34,6 @@ html {
     }
 }
 
-
 .intro {
     position: fixed;
     inset: 0;
@@ -131,6 +130,41 @@ html {
     text-align: center;
 }
 
+.projectRow .caption-right {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-family: "Inter Tight", serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    max-width: 600px;
+    margin: 0 auto 1em auto;
+    /*transition: opacity 0.7s ease, transform 0.7s ease, visibility 0.7s ease;*/
+}
+
+.projectRow .caption-right figcaption {
+    width: auto;
+    margin: 0;
+    white-space: nowrap;
+    position: absolute;
+    left: calc(100% + 0.7em);
+    top: 50%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
+}
+
+/*.projectRow .caption-right:hover {
+    visibility: visible;
+    transform: translateX(-10%);
+}*/
+
+.projectRow .caption-right:hover figcaption {
+    opacity: 1;
+    visibility: visible;
+}
+
 .credits {
     font-family: "Inter Tight", sans-serif;
     font-size: 1.2em;
@@ -148,6 +182,7 @@ html {
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
+    
 }
 
 .projectRow img {
@@ -157,6 +192,12 @@ html {
     display: block;
     margin: 0 auto 1em auto;
     filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.301));
+}
+
+.projectRow .caption-right img {
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
 }
 
 #nav_menu ul li a.gallery {
