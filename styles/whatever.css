@@ -3,7 +3,8 @@
 }
 
 html {
-    background-color: rgb(248, 243, 238);
+    background-image: url("../images/background.jpg");
+    /*filter: sepia(0.08);*/
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -38,7 +39,8 @@ html {
     position: fixed;
     inset: 0;
     z-index: 1000;
-    background: rgb(248, 243, 238);
+    /*background: rgb(248, 243, 238);*/
+    background: rgb(255, 255, 255);
     display: grid;
     place-items: center;
     opacity: 1;
@@ -192,6 +194,17 @@ html {
     display: block;
     margin: 0 auto 1em auto;
     filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.301));
+    transition: 0.5s ease;
+}
+
+.projectRow img:hover {
+    filter:
+    drop-shadow(0 0 8px rgba(0, 0, 0, 0.176))
+    drop-shadow(-10px 0px 0px rgb(244, 75, 143))
+    drop-shadow(-10px 0px 0px rgb(240, 117, 69))    
+    drop-shadow(-10px 0px 0px rgb(249, 216, 94))
+    drop-shadow(-10px 0px 0px rgb(89, 249, 206));
+    transition: 0.5s ease;
 }
 
 .projectRow .caption-right img {
@@ -332,6 +345,30 @@ html {
 
 
 @media (max-width: 1024px) {
+
+    .projectRow .caption-right {
+        width: min(88vw, 500px);
+        max-width: 88vw;
+    }
+
+    .projectRow img,
+    .projectRow .caption-right img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .projectRow .caption-right figcaption {
+        position: static;
+        left: auto;
+        top: auto;
+        margin-top: 0.6em;
+        white-space: normal;
+        text-align: center;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        font-size: 4vw;
+    }
 
     .intro img {
         max-width: 100%;
