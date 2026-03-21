@@ -3,7 +3,8 @@
 }
 
 html {
-    background-color: rgb(248, 243, 238);
+    /*background-color: rgb(248, 243, 238);*/
+    background-image: url("../images/background.jpg");
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -39,7 +40,8 @@ html {
     position: fixed;
     inset: 0;
     z-index: 1000;
-    background: rgb(248, 243, 238);
+    /*background: rgb(248, 243, 238);*/
+    background: rgb(255, 255, 255);
     display: grid;
     place-items: center;
     opacity: 1;
