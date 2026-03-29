@@ -128,7 +128,6 @@ html {
     transition: 0.5s
 }
 
-
 .project-column {
     width: 20%;
     min-width: 120px;
@@ -159,8 +158,7 @@ html {
     height: auto;
     display: block;
     margin: 0 auto;
-    filter: grayscale(0%) sepia(0%) hue-rotate(0deg)
-            drop-shadow(0 0 8px rgba(0, 0, 0, 0.301));
+    filter: grayscale(0%) sepia(0%) hue-rotate(0deg) drop-shadow(0 0 8px rgba(0, 0, 0, 0.186));     
     transition: filter 0.7s ease;
 }
 
