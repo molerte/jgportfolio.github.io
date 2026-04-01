@@ -200,10 +200,10 @@ html {
 .projectRow img:hover {
     filter:
     drop-shadow(0 0 8px rgba(0, 0, 0, 0.176))
-    drop-shadow(-10px 0px 0px rgb(244, 75, 143))
-    drop-shadow(-10px 0px 0px rgb(240, 117, 69))    
-    drop-shadow(-10px 0px 0px rgb(249, 216, 94))
-    drop-shadow(-10px 0px 0px rgb(89, 249, 206));
+    drop-shadow(-5px 0px 0px rgb(244, 75, 143))
+    drop-shadow(-5px 0px 0px rgb(240, 117, 69))    
+    drop-shadow(-5px 0px 0px rgb(249, 216, 94))
+    drop-shadow(-5px 0px 0px rgb(89, 249, 206));
     transition: 0.5s ease;
 }
 
