@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+}
+
+html {
+    background-image: url("../images/background.jpg");
+    /*filter: sepia(0.08);*/
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+
+@keyframes flicker {
+    50% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes intro-flicker {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes menu-blur {
+    0% {
+        filter: blur(7px);
+    }
+
+    20% {
+        filter: none;
+    }
+}
+
+.intro {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    /*background: rgb(248, 243, 238);*/
+    background: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    opacity: 1;
+    transition: opacity 500ms linear, pointer-events 500ms linear;
+}
+
+.intro.hidden {
+    display: none;
+}
+
+.intro.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.intro-text {
+    font-family: "Times New Roman", serif;
+    font-size: clamp(3.4em, 4vw, 2.5em);
+    color: rgb(0, 0, 0);
+    animation: intro-flicker 0.6s linear;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fifthDiv {
+    padding: 2vw 2vw 4vw 2vw;
+    min-height: 30em;
+    box-sizing: border-box;
+    /*border-bottom: 1px solid #757575;*/
+}
+
+.exit img {
+    width: 20%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1em auto;
+    filter: invert(1);
+    animation: flicker 0.005s linear infinite;
+}
+
+.exit-footer img {
+    width: 20%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 5em auto 0 auto;
+    filter: invert(1);
+    animation: flicker 0.005s linear infinite;
+}
+
+.side {
+    color: rgb(0, 0, 0);
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 200;
+    font-size: 7vw;
+    text-align: center;
+}
+
+.side-end {
+    color: rgb(0, 0, 0);
+    padding-top: 0.8em;
+    padding-bottom: 0.2em;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 200;
+    font-size: 7vw;
+    text-align: center;
+}
+
+.upsidedown {
+    transform: rotate(180deg);
+    color: rgb(0, 0, 0);
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 200;
+    font-size: 7vw;
+    text-align: center;
+}
+
+.projectRow .caption-right {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-family: "Inter Tight", serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    max-width: 600px;
+    margin: 0 auto 1em auto;
+    /*transition: opacity 0.7s ease, transform 0.7s ease, visibility 0.7s ease;*/
+}
+
+.projectRow .caption-right figcaption {
+    width: auto;
+    margin: 0;
+    white-space: nowrap;
+    position: absolute;
+    left: calc(100% + 0.7em);
+    top: 50%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.6s ease, transform 0.6s ease, visibility 0.6s ease;
+}
+
+/*.projectRow .caption-right:hover {
+    visibility: visible;
+    transform: translateX(-10%);
+}*/
+
+.projectRow .caption-right:hover figcaption {
+    opacity: 1;
+    visibility: visible;
+}
+
+.credits {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+    max-width: 30em;
+    width: 100%;
+}
+
+.projectRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1vw;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.projectRow img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1em auto;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.301));
+    transition: 0.5s ease;
+}
+
+.projectRow img:hover {
+    filter:
+        drop-shadow(0 0 8px rgba(0, 0, 0, 0.176)) drop-shadow(-5px 0px 0px rgb(244, 75, 143)) drop-shadow(-5px 0px 0px rgb(240, 117, 69)) drop-shadow(-5px 0px 0px rgb(249, 216, 94)) drop-shadow(-5px 0px 0px rgb(89, 249, 206));
+    transition: 0.5s ease;
+}
+
+.projectRow .caption-right img {
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.logo {
+    font-family: "Jersey 15", sans-serif;
+    font-size: clamp(4.4em, 5vw, 3.5em);
+    padding: 0.3em 0;
+}
+
+@media (max-width: 1024px) {
+
+    .projectRow .caption-right {
+        width: min(88vw, 500px);
+        max-width: 88vw;
+    }
+
+    .projectRow img,
+    .projectRow .caption-right img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .projectRow .caption-right figcaption {
+        position: static;
+        left: auto;
+        top: auto;
+        margin-top: 0.6em;
+        white-space: normal;
+        text-align: center;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        font-size: 4vw;
+    }
+
+    .intro img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .exit img {
+        width: 40%;
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: 1em auto 1em auto;
+    }
+
+    .exit-footer img {
+        width: 40%;
+        max-width: 200px;
+        height: auto;
+        display: block;
+        margin: 1em auto 1em auto;
+    }
+
+    .upsidedown,
+    .side,
+    .side-end {
+        font-size: 15vw;
+    }
+}
