@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./molerteGallery.css";
 
-const images = import.meta.glob("../assets/images/*.{jpg,JPG}", { eager: true });
+const images = import.meta.glob("../assets/images/*.{jpg,JPG,jpeg,JPEG,png,PNG}", { eager: true });
 
 export default function MolerteGallery() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -137,7 +137,7 @@ export default function MolerteGallery() {
                             </figure>
 
                             <figure className="caption-right">
-                                <img src={images["../assets/images/albumcover22.jpg"].default} className="website-img" alt="We All Collapse" />
+                                <img src={images["../assets/images/albumcover22COVERCLOUDS.jpg"].default} className="website-img" alt="We All Collapse" />
                                 <figcaption>We All Collapse</figcaption>
                             </figure>
 
@@ -171,8 +171,8 @@ export default function MolerteGallery() {
                             </figure>
 
                             <figure className="caption-right">
-                                <img src={images["../assets/images/idkl4.jpg"].default} className="website-img" alt="Curve" />
-                                <figcaption>Curve</figcaption>
+                                <img src={images["../assets/images/lyeyebetter.jpg"].default} className="website-img" alt="Curve" />
+                                <figcaption>Curve <span className="caption-year">2023</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
@@ -196,6 +196,27 @@ export default function MolerteGallery() {
                                 <img src={images["../assets/images/FinalFlight.jpg"].default} className="website-img" alt="Final Flight" />
                                 <figcaption>Final Flight</figcaption>
                             </figure>
+
+                            <div className="upsidedown">gallery.</div>
+
+                            <figure className="caption-right">
+                                <img src={images["../assets/images/cxv.png"].default} className="website-img" alt="CXV" />
+                                <figcaption>CXV</figcaption>
+                            </figure>
+
+                            <figure className="caption-right">
+                                <img src={images["../assets/images/pulsar.jpeg"].default} className="website-img" alt="Pulsar" />
+                                <figcaption>Pulsar</figcaption>
+                            </figure>
+
+                            <figure className="caption-right">
+                                <img src={images["../assets/images/thingsspider.jpg"].default} className="website-img" alt="Thing Spider" />
+                                <figcaption>Thing Spider</figcaption>
+                            </figure>
+
+
+
+
 
                             <div className="side-end">molerte.</div>
 
