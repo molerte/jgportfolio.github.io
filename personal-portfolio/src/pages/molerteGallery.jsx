@@ -48,126 +48,126 @@ export default function MolerteGallery() {
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/44eg.jpg"].default} className="yrbs-img" alt="Fallen" />
-                                <figcaption>Fallen</figcaption>
+                                <figcaption>Fallen <span className="caption-year">2021</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/untitledwave.jpg"].default} className="website-img" alt="Untitled Wave" />
-                                <figcaption>Untitled Wave</figcaption>
+                                <figcaption>Untitled Wave <span className="caption-year">2022</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/lyeyebetter.jpg"].default} className="website-img" alt="Composite" />
-                                <figcaption>Composite</figcaption>
+                                <figcaption>Composite <span className="caption-year">2023</span></figcaption>
                             </figure>
 
                             <div className="upsidedown">gallery.</div>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/topoutPORCHE911.jpg"].default} className="yrbs-img" alt="GT2 RS" />
-                                <figcaption>GT2 RS</figcaption>
+                                <figcaption>GT2 RS <span className="caption-year">2024</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/15amtilt.jpg"].default} className="website-img" alt="Serene. Life After Death" />
-                                <figcaption>Serene. Life After Death</figcaption>
+                                <figcaption>Serene. Life After Death <span className="caption-year">2021</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/15amOF1.jpg"].default} className="website-img" alt="19:45" />
-                                <figcaption>19:45</figcaption>
+                                <figcaption>19:45 <span className="caption-year">2020</span></figcaption>
                             </figure>
 
                             <div className="side">gallery.</div>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/EndlessNos.jpg"].default} className="yrbs-img" alt="Endless Nostalgia" />
-                                <figcaption>Endless Nostalgia</figcaption>
+                                <figcaption>Endless Nostalgia <span className="caption-year">2023</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/Collapse.JPG"].default} className="website-img" alt="Echoes" />
-                                <figcaption>Echoes</figcaption>
+                                <figcaption>Echoes <span className="caption-year">2025</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/coolprofilepic.jpg"].default} className="website-img" alt="Out of Comfort" />
-                                <figcaption>Out of Comfort</figcaption>
+                                <figcaption>Out of Comfort <span className="caption-year">2022</span></figcaption>
                             </figure>
 
                             <div className="upsidedown">gallery.</div>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/COMMUNITY-GARDEN.jpg"].default} className="website-img" alt="Community Garden" />
-                                <figcaption>Community Garden</figcaption>
+                                <figcaption>Community Garden <span className="caption-year">2025</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/goodgoodGOOD.jpg"].default} className="website-img" alt="Good" />
-                                <figcaption>Good</figcaption>
+                                <figcaption>Good <span className="caption-year">2020</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/beauties.jpg"].default} className="website-img" alt="Beauties Can Die" />
-                                <figcaption>Beauties Can Die</figcaption>
+                                <figcaption>Beauties Can Die <span className="caption-year">2022</span></figcaption>
                             </figure>
 
                             <div className="side">gallery.</div>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/roadtrip.jpg"].default} className="website-img" alt="iDeath 95" />
-                                <figcaption>iDeath 95</figcaption>
+                                <figcaption>iDeath 95 <span className="caption-year">2021</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/deluxeloweryoureyelids.jpg"].default} className="website-img" alt="Lower Your Eyelids" />
-                                <figcaption>Lower Your Eyelids</figcaption>
+                                <figcaption>Lower Your Eyelids <span className="caption-year">2021</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/dreamsMolerte.jpg"].default} className="website-img" alt="Another World" />
-                                <figcaption>Another World</figcaption>
+                                <figcaption>Another World <span className="caption-year">2021</span></figcaption>
                             </figure>
 
                             <div className="upsidedown">gallery.</div>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/illusions.jpg"].default} className="website-img" alt="Illusions" />
-                                <figcaption>Illusions</figcaption>
+                                <figcaption>Illusions <span className="caption-year">2024</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/albumcover22COVERCLOUDS.jpg"].default} className="website-img" alt="We All Collapse" />
-                                <figcaption>We All Collapse</figcaption>
+                                <figcaption>We All Collapse <span className="caption-year">2024</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/catsAlbum.jpg"].default} className="website-img" alt="Lost Cats" />
-                                <figcaption>Lost Cats</figcaption>
+                                <figcaption>Lost Cats <span className="caption-year">2023</span></figcaption>
                             </figure>
 
                             <div className="side">gallery.</div>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/molerte-woods.jpg"].default} className="website-img" alt="Woods" />
-                                <figcaption>Woods</figcaption>
+                                <figcaption>Woods <span className="caption-year">2026</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/molerteTheHighlight.jpg"].default} className="website-img" alt="The Highlights" />
-                                <figcaption>The Highlights</figcaption>
+                                <figcaption>The Highlights <span className="caption-year">2022</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/wonderlanddeluxe.jpg"].default} className="website-img" alt="Wonderland" />
-                                <figcaption>Wonderland</figcaption>
+                                <figcaption>Wonderland <span className="caption-year">2022</span></figcaption>
                             </figure>
 
                             <div className="upsidedown">gallery.</div>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/curtainsalbumcoverCURAINTS.jpg"].default} className="website-img" alt="Curtains" />
-                                <figcaption>Curtains</figcaption>
+                                <figcaption>Curtains <span className="caption-year">2023</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
@@ -177,46 +177,71 @@ export default function MolerteGallery() {
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/tuxGUYALBUMTONEDARKPA.jpg"].default} className="website-img" alt="Vocal" />
-                                <figcaption>Vocal</figcaption>
+                                <figcaption>Vocal <span className="caption-year">2023</span></figcaption>
                             </figure>
 
                             <div className="side">gallery.</div>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/HolmgrenPower.jpg"].default} className="website-img" alt="VisualPower Two" />
-                                <figcaption>VisualPower Two</figcaption>
+                                <figcaption>VisualPower Two <span className="caption-year">2024</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/porsche911drive2.jpg"].default} className="website-img" alt="Off The Lot" />
-                                <figcaption>Off The Lot</figcaption>
+                                <figcaption>Off The Lot <span className="caption-year">2024</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/FinalFlight.jpg"].default} className="website-img" alt="Final Flight" />
-                                <figcaption>Final Flight</figcaption>
+                                <figcaption>Final Flight <span className="caption-year">2022</span></figcaption>
                             </figure>
 
                             <div className="upsidedown">gallery.</div>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/cxv.png"].default} className="website-img" alt="CXV" />
-                                <figcaption>CXV</figcaption>
+                                <figcaption>Mourning <span className="caption-year">2023</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
-                                <img src={images["../assets/images/pulsar.jpeg"].default} className="website-img" alt="Pulsar" />
-                                <figcaption>Pulsar</figcaption>
+                                <img src={images["../assets/images/milo-dog.jpeg"].default} className="website-img" alt="Milo Dog" />
+                                <figcaption>Milo <span className="caption-year">2026</span></figcaption>
                             </figure>
 
                             <figure className="caption-right">
                                 <img src={images["../assets/images/thingsspider.jpg"].default} className="website-img" alt="Thing Spider" />
-                                <figcaption>Thing Spider</figcaption>
+                                <figcaption>Thing Spider <span className="caption-year">2022</span></figcaption>
                             </figure>
 
+                            <div className="side">gallery.</div>
 
+                            <figure className="caption-right">
+                                <img src={images["../assets/images/pulsar.jpeg"].default} className="website-img" alt="Pulsar" />
+                                <figcaption>Pulsar <span className="caption-year">2025</span></figcaption>
+                            </figure>
 
+                            <figure className="caption-right">
+                                <img src={images["../assets/images/pulsarnightmare.png"].default} className="website-img" alt="Pulsar (Nightmare)" />
+                                <figcaption>Pulsar (Nightmare) <span className="caption-year">2025</span></figcaption>
+                            </figure>
 
+                            <figure className="caption-right">
+                                <img src={images["../assets/images/spectrespromo.png"].default} className="website-img" alt="Spectres" />
+                                <figcaption>Spectres <span className="caption-year">2026</span></figcaption>
+                            </figure>
+
+                            <div className="upsidedown">gallery.</div>
+
+                            <figure className="caption-right">
+                                <img src={images["../assets/images/sora_Frame_recreation.png"].default} className="website-img" alt="Sora (My Version)" />
+                                <figcaption>Sora (My Version) <span className="caption-year">2025</span></figcaption>
+                            </figure>
+
+                            <figure className="caption-right">
+                                <img src={images["../assets/images/CalvisorWithouText.jpg"].default} className="website-img" alt="Calenvisor" />
+                                <figcaption>Calenvisor (6 Days Minimal) <span className="caption-year">2025</span></figcaption>
+                            </figure>
 
                             <div className="side-end">molerte.</div>
 

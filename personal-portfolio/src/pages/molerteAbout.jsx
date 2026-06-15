@@ -3,6 +3,7 @@ import image1 from "../assets/images/image1.png";
 import image4 from "../assets/images/image4.png";
 import image3 from "../assets/images/image3.png";
 import logo from "../assets/images/Jason_Garcia_logo.png";
+import background from "../assets/images/background.jpg";
 import "./molerteAbout.css";
 
 export default function MolerteAbout() {
