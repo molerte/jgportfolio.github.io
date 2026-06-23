@@ -243,6 +243,11 @@ export default function MolerteGallery() {
                                 <figcaption>Calenvisor (6 Days Minimal) <span className="caption-year">2025</span></figcaption>
                             </figure>
 
+                            <figure className="caption-right">
+                                <img src={images["../assets/images/mourningsomethjing.png"].default} className="website-img" alt="Something About This Mourning" />
+                                <figcaption>Something About This Mourning <span className="caption-year">2022</span></figcaption>
+                            </figure>
+
                             <div className="side-end">molerte.</div>
 
                         </div>
